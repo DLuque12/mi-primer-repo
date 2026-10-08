@@ -1,15 +1,13 @@
-name: Buscar oportunidades inmobiliarias
+name: Comandos Telegram
 
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - "src/**"
-      - "requirements.txt"
-      - ".github/workflows/buscador.yml"
+      - ".github/workflows/telegram-comandos.yml"
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -19,9 +17,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  buscar:
+  comandos:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
 
     steps:
       - name: Descargar repositorio
@@ -36,30 +34,23 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      - name: Ejecutar buscador
-        run: python src/buscador.py
-
-      - name: Depurar resultados
-        run: python src/postfilter.py
-
-      - name: Enviar alertas por Telegram
+      - name: Procesar comandos de Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          ALERT_SCORE: "75"
-          MAX_ALERT_RISK: "15"
-          MAX_ALERTS_PER_RUN: "5"
-        run: python src/notificar_telegram.py
+        run: python src/comandos_telegram.py
 
-      - name: Guardar resultados
+      - name: Guardar estado
         run: |
           git config user.name "buscador-inmobiliario[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/latest.json data/latest.md
-          if [ -f data/alerted_ids.json ]; then git add data/alerted_ids.json; fi
+          if [ -f data/telegram_update_state.json ]; then git add data/telegram_update_state.json; fi
+          if [ -f data/telegram_subscribers.enc ]; then git add data/telegram_subscribers.enc; fi
+          if [ -f data/latest.json ]; then git add data/latest.json; fi
+          if [ -f data/latest.md ]; then git add data/latest.md; fi
           if git diff --cached --quiet; then
             echo "No hay cambios que guardar."
           else
-            git commit -m "Actualizar oportunidades inmobiliarias"
+            git commit -m "Actualizar estado de comandos Telegram"
             git pull --rebase origin main
             git push
           fi
