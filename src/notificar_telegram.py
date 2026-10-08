@@ -110,6 +110,7 @@ def main() -> int:
 
     token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.getenv("TELEGRAM_CHAT_ID", "").strip()
+    newly_detected = False
     if not chat_id:
         saved_chat = load_json(chat_path, {})
         chat_id = str(saved_chat.get("chat_id") or "").strip()
@@ -120,23 +121,24 @@ def main() -> int:
                 json.dumps({"chat_id": chat_id}, ensure_ascii=False, indent=2),
                 encoding="utf-8",
             )
+            newly_detected = True
             print("Telegram: chat_id detectado automáticamente y guardado.")
+
+    if token and chat_id and newly_detected:
+        send_telegram(
+            token,
+            chat_id,
+            "✅ <b>Conexión lista</b>\n"
+            "Tu buscador inmobiliario quedó conectado a Telegram. "
+            "Desde ahora recibirás aquí las oportunidades nuevas que superen el filtro.",
+        )
 
     current_ids = {str(item.get("id")) for item in listings if item.get("id")}
     state = load_json(state_path, None)
 
-    # Primera ejecución: toma el inventario actual como línea base para no bombardear
-    # al usuario con anuncios antiguos cuando recién activa Telegram.
     if state is None:
         save_ids(state_path, current_ids)
         print(f"Telegram: línea base creada con {len(current_ids)} avisos actuales.")
-        if token and chat_id:
-            send_telegram(
-                token,
-                chat_id,
-                "✅ <b>Buscador inmobiliario activado</b>\n"
-                "Desde ahora te avisaré cuando aparezcan oportunidades nuevas que superen el filtro.",
-            )
         return 0
 
     alerted = {str(x) for x in state.get("alerted_ids", [])}
