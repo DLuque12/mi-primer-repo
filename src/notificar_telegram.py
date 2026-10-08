@@ -67,6 +67,20 @@ def send_telegram(token: str, chat_id: str, text: str) -> bool:
     return True
 
 
+def parking_text(item: dict) -> str:
+    status = item.get("parking_status")
+    spaces = item.get("parking_spaces")
+    if status == "included":
+        if isinstance(spaces, int) and spaces > 0:
+            return f"✅ incluida ({spaces})"
+        return "✅ incluida"
+    if status == "not_included":
+        return "❌ no incluida"
+    if status == "optional":
+        return "➕ opcional / por separado"
+    return "❔ no indicada en el aviso"
+
+
 def format_listing(item: dict) -> str:
     title = html.escape((item.get("title") or "Oportunidad inmobiliaria")[:120])
     district = html.escape(str(item.get("district") or ""))
@@ -88,6 +102,8 @@ def format_listing(item: dict) -> str:
         details.append(f"📐 {area:g} m²")
     if isinstance(ppm2, (int, float)):
         details.append(f"📊 US$ {ppm2:,.0f}/m²")
+    if property_type != "Terreno":
+        details.append(f"🚗 Cochera: {parking_text(item)}")
     if isinstance(discount, (int, float)) and discount > 0:
         details.append(f"📉 {discount:.1f}% por debajo de la mediana detectada")
     details.append(f"⭐ Puntaje: <b>{score:.1f}/100</b>")
