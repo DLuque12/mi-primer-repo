@@ -1,0 +1,1 @@
+Prueba de detección de chat de Telegram después de /start y hola.
