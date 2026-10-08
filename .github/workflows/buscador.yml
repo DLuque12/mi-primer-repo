@@ -42,10 +42,16 @@ jobs:
       - name: Depurar resultados
         run: python src/postfilter.py
 
+      - name: Detectar chat de Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          CHAT_ID=$(curl -sS "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates" | python -c 'import json,sys; d=json.load(sys.stdin); r=d.get("result", []); ids=[]; [(ids.append((u.get("message") or u.get("edited_message") or {}).get("chat", {}).get("id"))) for u in r]; ids=[x for x in ids if x is not None]; print(ids[-1] if ids else "")')
+          if [ -n "$CHAT_ID" ]; then echo "TELEGRAM_CHAT_ID=$CHAT_ID" >> "$GITHUB_ENV"; fi
+
       - name: Enviar alertas por Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ALERT_SCORE: "75"
           MAX_ALERT_RISK: "15"
           MAX_ALERTS_PER_RUN: "5"
@@ -57,10 +63,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/latest.json data/latest.md
           if [ -f data/alerted_ids.json ]; then git add data/alerted_ids.json; fi
-          if [ -f data/telegram_chat.json ]; then git add data/telegram_chat.json; fi
           if git diff --cached --quiet; then
             echo "No hay cambios que guardar."
           else
             git commit -m "Actualizar oportunidades inmobiliarias"
+            git pull --rebase origin main
             git push
           fi
