@@ -2,6 +2,12 @@ name: Buscar oportunidades inmobiliarias
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "requirements.txt"
+      - ".github/workflows/buscador.yml"
   schedule:
     - cron: "17 */6 * * *"
 
