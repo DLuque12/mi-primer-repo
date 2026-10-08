@@ -32,6 +32,27 @@ OUTSIDE_CITY_TERMS = [
     "san vicente de cañete", "san vicente de canete",
 ]
 
+PARKING_NEGATIVE_PATTERNS = [
+    r"no\s+cuenta\s+con\s+estacionamiento",
+    r"no\s+tiene\s+estacionamiento",
+    r"sin\s+estacionamiento",
+    r"sin\s+cochera",
+    r"no\s+incluye\s+estacionamiento",
+    r"no\s+incluye\s+cochera",
+]
+
+PARKING_OPTIONAL_PATTERNS = [
+    r"estacionamiento[^.]{0,50}(?:opcional|adicional|por\s+separado|se\s+vende\s+aparte)",
+    r"cochera[^.]{0,50}(?:opcional|adicional|por\s+separado|se\s+vende\s+aparte)",
+]
+
+PARKING_POSITIVE_PATTERNS = [
+    r"\b([1-9]\d*)\s+estac\.?\b",
+    r"\b([1-9]\d*)\s+estacionamientos?\b",
+    r"\b([1-9]\d*)\s+cocheras?\b",
+    r"\b([1-9]\d*)\s+garajes?\b",
+]
+
 
 def detect_district(url: str, text: str) -> str | None:
     url_l = (url or "").lower()
@@ -45,6 +66,42 @@ def detect_district(url: str, text: str) -> str | None:
         if slug in url_l or any(v in text_l for v in variants):
             return name
     return None
+
+
+def detect_parking(text: str) -> tuple[str, int | None]:
+    text_l = (text or "").lower()
+
+    for pattern in PARKING_NEGATIVE_PATTERNS:
+        if re.search(pattern, text_l):
+            return "not_included", 0
+
+    for pattern in PARKING_OPTIONAL_PATTERNS:
+        if re.search(pattern, text_l):
+            return "optional", None
+
+    for pattern in PARKING_POSITIVE_PATTERNS:
+        match = re.search(pattern, text_l)
+        if match:
+            try:
+                return "included", int(match.group(1))
+            except (TypeError, ValueError):
+                return "included", None
+
+    positive_phrases = [
+        "estacionamiento incluido",
+        "estacionamiento incluido en",
+        "incluye estacionamiento",
+        "cochera incluida",
+        "incluye cochera",
+        "con cochera",
+        "con estacionamiento",
+        "garage incluido",
+        "garaje incluido",
+    ]
+    if any(phrase in text_l for phrase in positive_phrases):
+        return "included", None
+
+    return "unknown", None
 
 
 def recompute_scores(items: list[dict]) -> None:
@@ -89,6 +146,21 @@ def recompute_scores(items: list[dict]) -> None:
         if "por debajo del mercado" in text_l:
             score += 8
 
+        parking_status, parking_spaces = detect_parking(item.get("raw_text") or "")
+        item["parking_status"] = parking_status
+        item["parking_spaces"] = parking_spaces
+        item["has_parking"] = parking_status == "included"
+
+        # La cochera es una preferencia fuerte, pero por ahora no elimina avisos:
+        # muchos portales no la indican en el texto aunque la propiedad sí pueda tenerla.
+        if item["property_type"] != "Terreno":
+            if parking_status == "included":
+                score += 8
+            elif parking_status == "not_included":
+                score -= 8
+            elif parking_status == "optional":
+                score -= 2
+
         median = medians.get((item["district"], item["property_type"]))
         ppm2 = item.get("price_per_m2")
         if median and isinstance(ppm2, (int, float)) and ppm2 > 0:
@@ -100,6 +172,18 @@ def recompute_scores(items: list[dict]) -> None:
 
         score -= min(risk, 45)
         item["opportunity_score"] = round(max(0, min(100, score)), 1)
+
+
+def parking_label(item: dict) -> str:
+    status = item.get("parking_status")
+    spaces = item.get("parking_spaces")
+    if status == "included":
+        return f"Sí ({spaces})" if isinstance(spaces, int) and spaces > 0 else "Sí"
+    if status == "not_included":
+        return "No"
+    if status == "optional":
+        return "Opcional"
+    return "—"
 
 
 def render_markdown(payload: dict) -> str:
@@ -116,10 +200,11 @@ def render_markdown(payload: dict) -> str:
         f"Tope: **US$ {payload.get('max_price_usd', 60000):,}**",
         "",
         "> Lista depurada para evitar avisos inyectados por los portales desde otros distritos.",
+        "> El puntaje prioriza propiedades con cochera cuando el aviso lo confirma.",
         "> El puntaje es orientativo: verifica partida registral, cargas, posesión e independización antes de separar.",
         "",
-        "| Puntaje | Distrito | Tipo | Precio | Área | US$/m² | Riesgo | Aviso |",
-        "|---:|---|---|---:|---:|---:|---:|---|",
+        "| Puntaje | Distrito | Tipo | Precio | Área | US$/m² | Cochera | Riesgo | Aviso |",
+        "|---:|---|---|---:|---:|---:|---|---:|---|",
     ]
 
     for item in items:
@@ -131,7 +216,7 @@ def render_markdown(payload: dict) -> str:
         title = title.replace("|", "/")[:100]
         lines.append(
             f"| {item.get('opportunity_score', 0):.1f} | {item['district']} | {item['property_type']} | "
-            f"${int(item['price_usd']):,} | {area} | {ppm2} | {item.get('risk_score', 0)} | "
+            f"${int(item['price_usd']):,} | {area} | {ppm2} | {parking_label(item)} | {item.get('risk_score', 0)} | "
             f"[{title}]({item['url']}) |"
         )
 
