@@ -42,11 +42,21 @@ jobs:
       - name: Depurar resultados
         run: python src/postfilter.py
 
+      - name: Enviar alertas por Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ALERT_SCORE: "75"
+          MAX_ALERT_RISK: "15"
+          MAX_ALERTS_PER_RUN: "5"
+        run: python src/notificar_telegram.py
+
       - name: Guardar resultados
         run: |
           git config user.name "buscador-inmobiliario[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/latest.json data/latest.md
+          if [ -f data/alerted_ids.json ]; then git add data/alerted_ids.json; fi
           if git diff --cached --quiet; then
             echo "No hay cambios que guardar."
           else
