@@ -16,7 +16,7 @@ permissions:
 
 concurrency:
   group: buscador-inmobiliario
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   buscar:
@@ -38,6 +38,9 @@ jobs:
 
       - name: Ejecutar buscador
         run: python src/buscador.py
+
+      - name: Depurar resultados
+        run: python src/postfilter.py
 
       - name: Guardar resultados
         run: |
