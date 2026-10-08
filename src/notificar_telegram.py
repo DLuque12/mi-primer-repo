@@ -28,6 +28,27 @@ def save_ids(path: Path, ids: set[str]) -> None:
     )
 
 
+def detect_chat_id(token: str) -> str:
+    if not token:
+        return ""
+    try:
+        response = requests.get(
+            f"https://api.telegram.org/bot{token}/getUpdates",
+            timeout=20,
+        )
+        response.raise_for_status()
+        updates = response.json().get("result", [])
+        for update in reversed(updates):
+            message = update.get("message") or update.get("edited_message") or {}
+            chat = message.get("chat") or {}
+            chat_id = chat.get("id")
+            if chat_id is not None:
+                return str(chat_id)
+    except Exception as exc:
+        print(f"Telegram: no se pudo detectar chat_id automáticamente: {exc}")
+    return ""
+
+
 def send_telegram(token: str, chat_id: str, text: str) -> bool:
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     response = requests.post(
@@ -80,6 +101,7 @@ def main() -> int:
     root = Path(__file__).resolve().parents[1]
     latest_path = root / "data" / "latest.json"
     state_path = root / "data" / "alerted_ids.json"
+    chat_path = root / "data" / "telegram_chat.json"
 
     payload = load_json(latest_path, {})
     listings = payload.get("listings", [])
@@ -88,6 +110,17 @@ def main() -> int:
 
     token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.getenv("TELEGRAM_CHAT_ID", "").strip()
+    if not chat_id:
+        saved_chat = load_json(chat_path, {})
+        chat_id = str(saved_chat.get("chat_id") or "").strip()
+    if token and not chat_id:
+        chat_id = detect_chat_id(token)
+        if chat_id:
+            chat_path.write_text(
+                json.dumps({"chat_id": chat_id}, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            print("Telegram: chat_id detectado automáticamente y guardado.")
 
     current_ids = {str(item.get("id")) for item in listings if item.get("id")}
     state = load_json(state_path, None)
@@ -123,7 +156,7 @@ def main() -> int:
         return 0
 
     if not token or not chat_id:
-        print("Telegram: faltan TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID; no se enviaron alertas.")
+        print("Telegram: falta el token o todavía no hay mensaje /start del usuario; no se enviaron alertas.")
         return 0
 
     sent = 0
