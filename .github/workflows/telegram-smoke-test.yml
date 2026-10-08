@@ -1,0 +1,26 @@
+name: Prueba rápida de Telegram
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/telegram-smoke-test.yml"
+
+jobs:
+  telegram:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Detectar chat y enviar prueba
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          set -e
+          UPDATES=$(curl -sS "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates")
+          CHAT_ID=$(printf '%s' "$UPDATES" | python -c 'import json,sys; d=json.load(sys.stdin); r=d.get("result", []); ids=[]; [(ids.append((u.get("message") or u.get("edited_message") or {}).get("chat", {}).get("id"))) for u in r]; ids=[x for x in ids if x is not None]; print(ids[-1] if ids else "")')
+          if [ -z "$CHAT_ID" ]; then
+            echo "No se encontró chat de Telegram."
+            exit 1
+          fi
+          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${CHAT_ID}" \
+            --data-urlencode "text=✅ Conexión lista. Tu buscador inmobiliario ya puede enviarte alertas por Telegram."
