@@ -28,25 +28,57 @@ def save_ids(path: Path, ids: set[str]) -> None:
     )
 
 
-def detect_chat_id(token: str) -> str:
+def detect_chat_ids(token: str) -> list[str]:
+    """Devuelve todos los chats privados recientes que escribieron al bot."""
     if not token:
-        return ""
+        return []
     try:
         response = requests.get(
             f"https://api.telegram.org/bot{token}/getUpdates",
+            params={"limit": 100},
             timeout=20,
         )
         response.raise_for_status()
         updates = response.json().get("result", [])
-        for update in reversed(updates):
+        chat_ids: list[str] = []
+        seen: set[str] = set()
+        for update in updates:
             message = update.get("message") or update.get("edited_message") or {}
             chat = message.get("chat") or {}
             chat_id = chat.get("id")
-            if chat_id is not None:
-                return str(chat_id)
+            chat_type = chat.get("type")
+            if chat_id is None or chat_type != "private":
+                continue
+            value = str(chat_id)
+            if value not in seen:
+                seen.add(value)
+                chat_ids.append(value)
+        return chat_ids
     except Exception as exc:
-        print(f"Telegram: no se pudo detectar chat_id automáticamente: {exc}")
-    return ""
+        print(f"Telegram: no se pudieron detectar destinatarios automáticamente: {exc}")
+        return []
+
+
+def configured_chat_ids() -> list[str]:
+    """Permite además fijar destinatarios manualmente por secretos de GitHub."""
+    values: list[str] = []
+    single = os.getenv("TELEGRAM_CHAT_ID", "").strip()
+    multiple = os.getenv("TELEGRAM_CHAT_IDS", "").strip()
+    if single:
+        values.append(single)
+    if multiple:
+        values.extend(x.strip() for x in multiple.split(",") if x.strip())
+    return values
+
+
+def unique(values: list[str]) -> list[str]:
+    result: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        if value and value not in seen:
+            seen.add(value)
+            result.append(value)
+    return result
 
 
 def send_telegram(token: str, chat_id: str, text: str) -> bool:
@@ -62,7 +94,7 @@ def send_telegram(token: str, chat_id: str, text: str) -> bool:
         timeout=20,
     )
     if not response.ok:
-        print(f"Telegram respondió {response.status_code}: {response.text[:300]}")
+        print(f"Telegram respondió {response.status_code} para un destinatario: {response.text[:200]}")
         return False
     return True
 
@@ -117,7 +149,6 @@ def main() -> int:
     root = Path(__file__).resolve().parents[1]
     latest_path = root / "data" / "latest.json"
     state_path = root / "data" / "alerted_ids.json"
-    chat_path = root / "data" / "telegram_chat.json"
 
     payload = load_json(latest_path, {})
     listings = payload.get("listings", [])
@@ -125,29 +156,12 @@ def main() -> int:
         listings = []
 
     token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
-    chat_id = os.getenv("TELEGRAM_CHAT_ID", "").strip()
-    newly_detected = False
-    if not chat_id:
-        saved_chat = load_json(chat_path, {})
-        chat_id = str(saved_chat.get("chat_id") or "").strip()
-    if token and not chat_id:
-        chat_id = detect_chat_id(token)
-        if chat_id:
-            chat_path.write_text(
-                json.dumps({"chat_id": chat_id}, ensure_ascii=False, indent=2),
-                encoding="utf-8",
-            )
-            newly_detected = True
-            print("Telegram: chat_id detectado automáticamente y guardado.")
+    chat_ids = unique(configured_chat_ids() + detect_chat_ids(token))
 
-    if token and chat_id and newly_detected:
-        send_telegram(
-            token,
-            chat_id,
-            "✅ <b>Conexión lista</b>\n"
-            "Tu buscador inmobiliario quedó conectado a Telegram. "
-            "Desde ahora recibirás aquí las oportunidades nuevas que superen el filtro.",
-        )
+    if chat_ids:
+        print(f"Telegram: {len(chat_ids)} destinatario(s) detectado(s).")
+    else:
+        print("Telegram: no hay destinatarios. Cada persona debe abrir el bot y enviar /start.")
 
     current_ids = {str(item.get("id")) for item in listings if item.get("id")}
     state = load_json(state_path, None)
@@ -173,19 +187,29 @@ def main() -> int:
         print("Telegram: no hay oportunidades nuevas que superen el umbral.")
         return 0
 
-    if not token or not chat_id:
-        print("Telegram: falta el token o todavía no hay mensaje /start del usuario; no se enviaron alertas.")
+    if not token or not chat_ids:
+        print("Telegram: falta el token o no hay usuarios suscritos; no se enviaron alertas.")
         return 0
 
-    sent = 0
+    sent_listings = 0
+    total_messages = 0
     for item in candidates:
-        if send_telegram(token, chat_id, format_listing(item)):
+        delivered = 0
+        text = format_listing(item)
+        for chat_id in chat_ids:
+            if send_telegram(token, chat_id, text):
+                delivered += 1
+                total_messages += 1
+        if delivered:
             alerted.add(str(item["id"]))
-            sent += 1
+            sent_listings += 1
 
-    if sent:
+    if sent_listings:
         save_ids(state_path, alerted)
-    print(f"Telegram: {sent} alerta(s) enviada(s).")
+    print(
+        f"Telegram: {sent_listings} oportunidad(es) enviadas, "
+        f"{total_messages} mensaje(s) en total a {len(chat_ids)} destinatario(s)."
+    )
     return 0
 
 
