@@ -7,7 +7,9 @@ from pathlib import Path
 from telegram_utils import (
     format_listing,
     load_json,
+    load_sent_state,
     load_subscribers,
+    save_sent_state,
     send_telegram,
 )
 
@@ -28,6 +30,7 @@ def main() -> int:
     latest_path = root / "data" / "latest.json"
     state_path = root / "data" / "alerted_ids.json"
     subscribers_path = root / "data" / "telegram_subscribers.enc"
+    sent_path = root / "data" / "telegram_sent.enc"
 
     payload = load_json(latest_path, {})
     listings = payload.get("listings", [])
@@ -44,6 +47,7 @@ def main() -> int:
         print("Telegram: todavía no hay suscriptores registrados.")
         return 0
 
+    sent_state = load_sent_state(sent_path, token)
     current_ids = {str(item.get("id")) for item in listings if item.get("id")}
     state = load_json(state_path, None)
 
@@ -70,19 +74,31 @@ def main() -> int:
 
     sent_items = 0
     sent_messages = 0
+    history_changed = False
+
     for item in candidates:
         delivered = False
-        message = format_listing(item)
+        item_id = str(item["id"])
+
         for chat_id in sorted(subscribers):
+            seen_by_chat = sent_state.setdefault(chat_id, set())
+            already_sent = item_id in seen_by_chat
+            message = format_listing(item, already_sent=already_sent)
             if send_telegram(token, chat_id, message):
                 delivered = True
                 sent_messages += 1
+                if item_id not in seen_by_chat:
+                    seen_by_chat.add(item_id)
+                    history_changed = True
+
         if delivered:
-            alerted.add(str(item["id"]))
+            alerted.add(item_id)
             sent_items += 1
 
     if sent_items:
         save_ids(state_path, alerted)
+    if history_changed:
+        save_sent_state(sent_path, token, sent_state)
 
     print(
         f"Telegram: {sent_items} oportunidad(es) enviada(s) en "
