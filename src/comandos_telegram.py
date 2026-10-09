@@ -10,22 +10,53 @@ import requests
 from telegram_utils import (
     format_listing,
     load_json,
+    load_sent_state,
     load_subscribers,
+    save_sent_state,
     save_subscribers,
     send_telegram,
     top_listings,
 )
 
 
-def send_current_offers(root: Path, token: str, chat_id: str, header: str) -> None:
+def send_current_offers(
+    root: Path,
+    token: str,
+    chat_id: str,
+    header: str,
+    only_unseen: bool = False,
+) -> None:
     payload = load_json(root / "data" / "latest.json", {})
-    items = top_listings(payload, limit=5)
+    sent_path = root / "data" / "telegram_sent.enc"
+    sent_state = load_sent_state(sent_path, token)
+    seen_by_chat = sent_state.setdefault(chat_id, set())
+
+    # Pedimos más candidatos para que /nuevas pueda saltarse los ya enviados
+    # y aun así devolver hasta 5 resultados útiles.
+    items = top_listings(payload, limit=30)
+    if only_unseen:
+        items = [item for item in items if str(item.get("id") or "") not in seen_by_chat]
+    items = items[:5]
+
     if not items:
-        send_telegram(token, chat_id, "No encontré oportunidades que superen el filtro actual.")
+        if only_unseen:
+            send_telegram(token, chat_id, "✅ No tienes ofertas nuevas pendientes entre las mejores oportunidades actuales.")
+        else:
+            send_telegram(token, chat_id, "No encontré oportunidades que superen el filtro actual.")
         return
+
     send_telegram(token, chat_id, header)
+    changed = False
     for item in items:
-        send_telegram(token, chat_id, format_listing(item))
+        item_id = str(item.get("id") or "")
+        already_sent = bool(item_id and item_id in seen_by_chat)
+        if send_telegram(token, chat_id, format_listing(item, already_sent=already_sent)):
+            if item_id and item_id not in seen_by_chat:
+                seen_by_chat.add(item_id)
+                changed = True
+
+    if changed:
+        save_sent_state(sent_path, token, sent_state)
 
 
 def fresh_search(root: Path) -> bool:
@@ -89,7 +120,7 @@ def main() -> int:
             send_telegram(token, chat_id, "🔕 Dejaste de recibir alertas. Puedes volver con /start.")
             continue
 
-        if command in {"/start", "/ofertas", "/buscar", "/ayuda"} or text.lower() in {"hola", "ayuda"}:
+        if command in {"/start", "/ofertas", "/nuevas", "/buscar", "/ayuda"} or text.lower() in {"hola", "ayuda"}:
             if chat_id not in subscribers:
                 subscribers.add(chat_id)
                 subscribers_changed = True
@@ -101,14 +132,29 @@ def main() -> int:
                 "✅ <b>Bot activado</b>\n"
                 "Recibirás nuevas oportunidades automáticamente.\n\n"
                 "Comandos:\n"
-                "/ofertas - muestra las mejores ofertas actuales\n"
+                "/nuevas - muestra solo ofertas que todavía no te envié\n"
+                "/ofertas - muestra las mejores ofertas actuales, incluso repetidas\n"
                 "/buscar - hace una búsqueda nueva ahora\n"
                 "/ayuda - muestra los comandos\n"
                 "/stop - deja de recibir alertas",
             )
             send_current_offers(root, token, chat_id, "📋 <b>Mejores oportunidades actuales</b>")
+        elif command == "/nuevas":
+            send_current_offers(
+                root,
+                token,
+                chat_id,
+                "🆕 <b>Ofertas que todavía no te había enviado</b>",
+                only_unseen=True,
+            )
         elif command == "/ofertas":
-            send_current_offers(root, token, chat_id, "📋 <b>Mejores oportunidades actuales</b>")
+            send_current_offers(
+                root,
+                token,
+                chat_id,
+                "📋 <b>Mejores oportunidades actuales</b>\n"
+                "🆕 = no te la había enviado · 🔁 = ya te la envié antes",
+            )
         elif command == "/buscar":
             send_telegram(
                 token,
@@ -118,7 +164,13 @@ def main() -> int:
             if not searched_now:
                 searched_now = fresh_search(root)
             if searched_now:
-                send_current_offers(root, token, chat_id, "✅ <b>Búsqueda nueva terminada</b>")
+                send_current_offers(
+                    root,
+                    token,
+                    chat_id,
+                    "✅ <b>Búsqueda nueva terminada</b>\n"
+                    "Te marco cuáles ya te había enviado y cuáles son nuevas para ti.",
+                )
             else:
                 send_telegram(token, chat_id, "⚠️ No pude completar la búsqueda nueva. Prueba nuevamente más tarde.")
         elif command == "/ayuda" or text.lower() in {"hola", "ayuda"}:
@@ -126,7 +178,8 @@ def main() -> int:
                 token,
                 chat_id,
                 "🤖 <b>Comandos disponibles</b>\n"
-                "/ofertas - reenviar las 5 mejores ofertas guardadas\n"
+                "/nuevas - mostrar solo ofertas que aún no te envié\n"
+                "/ofertas - reenviar las 5 mejores ofertas actuales y marcar repetidas\n"
                 "/buscar - buscar propiedades nuevamente ahora\n"
                 "/stop - dejar de recibir alertas",
             )
