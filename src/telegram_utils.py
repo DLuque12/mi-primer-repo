@@ -50,6 +50,47 @@ def save_subscribers(path: Path, token: str, subscribers: set[str]) -> None:
     path.write_text(encrypted + "\n", encoding="utf-8")
 
 
+def load_sent_state(path: Path, token: str) -> dict[str, set[str]]:
+    """Carga, cifrado, qué avisos ya recibió cada chat de Telegram."""
+    if not token or not path.exists():
+        return {}
+    try:
+        encrypted = path.read_text(encoding="utf-8").strip().encode("ascii")
+        if not encrypted:
+            return {}
+        data = json.loads(_fernet(token).decrypt(encrypted).decode("utf-8"))
+        raw = data.get("sent", {})
+        if not isinstance(raw, dict):
+            return {}
+        return {
+            str(chat_id): {str(item_id) for item_id in ids if str(item_id).strip()}
+            for chat_id, ids in raw.items()
+            if isinstance(ids, list)
+        }
+    except (InvalidToken, ValueError, json.JSONDecodeError, UnicodeDecodeError):
+        print("Telegram: no se pudo leer el historial cifrado de avisos enviados.")
+        return {}
+
+
+def save_sent_state(path: Path, token: str, sent_state: dict[str, set[str]]) -> None:
+    """Guarda cifrado el historial de avisos enviados por cada chat."""
+    if not token:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = json.dumps(
+        {
+            "sent": {
+                str(chat_id): sorted(str(item_id) for item_id in ids)
+                for chat_id, ids in sent_state.items()
+            }
+        },
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    encrypted = _fernet(token).encrypt(payload).decode("ascii")
+    path.write_text(encrypted + "\n", encoding="utf-8")
+
+
 def send_telegram(token: str, chat_id: str, text: str) -> bool:
     response = requests.post(
         f"https://api.telegram.org/bot{token}/sendMessage",
@@ -81,7 +122,7 @@ def parking_text(item: dict) -> str:
     return "❔ no indicada en el aviso"
 
 
-def format_listing(item: dict) -> str:
+def format_listing(item: dict, already_sent: bool = False) -> str:
     title = html.escape((item.get("title") or "Oportunidad inmobiliaria")[:120])
     district = html.escape(str(item.get("district") or ""))
     property_type = html.escape(str(item.get("property_type") or ""))
@@ -93,7 +134,13 @@ def format_listing(item: dict) -> str:
     risk = int(item.get("risk_score") or 0)
     url = html.escape(str(item.get("url") or ""), quote=True)
 
+    if already_sent:
+        status_line = "🔁 <b>YA TE LA ENVIÉ ANTES</b>"
+    else:
+        status_line = "🆕 <b>NUEVO PARA TI</b>"
+
     details = [
+        status_line,
         "🏠 <b>OPORTUNIDAD INMOBILIARIA</b>",
         f"📍 <b>{district}</b> · {property_type}",
         f"💵 <b>US$ {price:,}</b>",
