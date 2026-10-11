@@ -126,6 +126,7 @@ def format_listing(item: dict, already_sent: bool = False) -> str:
     title = html.escape((item.get("title") or "Oportunidad inmobiliaria")[:120])
     district = html.escape(str(item.get("district") or ""))
     property_type = html.escape(str(item.get("property_type") or ""))
+    source = html.escape(str(item.get("source") or "Fuente no indicada"))
     price = int(item.get("price_usd") or 0)
     area = item.get("area_m2")
     ppm2 = item.get("price_per_m2")
@@ -142,6 +143,7 @@ def format_listing(item: dict, already_sent: bool = False) -> str:
     details = [
         status_line,
         "🏠 <b>OPORTUNIDAD INMOBILIARIA</b>",
+        f"🌐 Fuente: <b>{source}</b>",
         f"📍 <b>{district}</b> · {property_type}",
         f"💵 <b>US$ {price:,}</b>",
     ]
