@@ -18,6 +18,7 @@ from bs4 import BeautifulSoup
 
 MAX_PRICE_USD = 60_000
 REQUEST_TIMEOUT = 25
+PEN_PER_USD = float(os.getenv("PEN_PER_USD", "3.45"))
 USER_AGENT = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -93,16 +94,27 @@ class Listing:
     discount_vs_median_pct: float | None = None
 
 
-def district_from_text(text: str, fallback_slug: str) -> str:
+def detect_allowed_district(text: str) -> str | None:
     lower = text.lower()
-    for slug, name in DISTRICTS.items():
+    # Ordenar por longitud evita confundir Miraflores con San Juan de Miraflores.
+    for slug, name in sorted(DISTRICTS.items(), key=lambda x: len(x[0]), reverse=True):
         variants = {name.lower(), slug.replace("-", " ")}
         if any(v in lower for v in variants):
             return name
-    return DISTRICTS[fallback_slug]
+    return None
 
 
-def source_urls() -> Iterable[tuple[str, str, str, str]]:
+def district_from_text(text: str, fallback_slug: str | None) -> str | None:
+    detected = detect_allowed_district(text)
+    if detected:
+        return detected
+    if fallback_slug:
+        return DISTRICTS[fallback_slug]
+    return None
+
+
+def source_urls() -> Iterable[tuple[str, str, str | None, str]]:
+    # Portales que permiten consultar por distrito.
     for district_slug in DISTRICTS:
         for type_slug, type_name in PROPERTY_TYPES.items():
             yield (
@@ -119,32 +131,70 @@ def source_urls() -> Iterable[tuple[str, str, str, str]]:
                 f"https://www.adondevivir.com/{type_slug}-en-venta-en-{district_slug}.html",
             )
 
+    # Portales adicionales. Se consulta Lima completa y solo se conserva un aviso
+    # cuando el distrito permitido aparece explícitamente en el texto del anuncio.
+    for type_slug, type_name in PROPERTY_TYPES.items():
+        yield (
+            "Mercado Libre",
+            type_name,
+            None,
+            f"https://listado.mercadolibre.com.pe/inmuebles/{type_slug}/venta/lima/",
+        )
+        yield (
+            "LaEncontre",
+            type_name,
+            None,
+            f"https://www.laencontre.com.pe/venta/{type_slug}/lima",
+        )
+
 
 def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def _number_from_price_fragment(fragment: str) -> int | None:
+    digits = re.sub(r"\D", "", fragment)
+    if not digits:
+        return None
+    return int(digits)
+
+
 def extract_price_usd(text: str) -> int | None:
-    patterns = [
-        r"(?:USD|US\$|\$)\s*([0-9]{1,3}(?:[.,\s][0-9]{3})+|[0-9]{4,6})",
-        r"([0-9]{1,3}(?:[.,\s][0-9]{3})+|[0-9]{4,6})\s*(?:USD|d[oó]lares)",
+    usd_patterns = [
+        r"(?:USD|US\$|\$)\s*([0-9]{1,3}(?:[.,\s][0-9]{3})+|[0-9]{4,7})",
+        r"([0-9]{1,3}(?:[.,\s][0-9]{3})+|[0-9]{4,7})\s*(?:USD|d[oó]lares)",
     ]
     candidates: list[int] = []
-    for pattern in patterns:
+    for pattern in usd_patterns:
         for match in re.findall(pattern, text, flags=re.I):
-            digits = re.sub(r"\D", "", match)
-            if not digits:
-                continue
-            value = int(digits)
-            if 5_000 <= value <= 2_000_000:
+            value = _number_from_price_fragment(match)
+            if value is not None and 5_000 <= value <= 2_000_000:
                 candidates.append(value)
-    return min(candidates) if candidates else None
+    if candidates:
+        return min(candidates)
+
+    # Algunos avisos de Mercado Libre muestran solo soles. La conversión es
+    # aproximada y configurable por PEN_PER_USD para no perder oportunidades.
+    pen_patterns = [
+        r"(?:S/\.?|PEN)\s*([0-9]{1,3}(?:[.,\s][0-9]{3})+|[0-9]{5,8})",
+        r"([0-9]{1,3}(?:[.,\s][0-9]{3})+|[0-9]{5,8})\s*(?:soles|PEN)",
+    ]
+    pen_candidates: list[int] = []
+    for pattern in pen_patterns:
+        for match in re.findall(pattern, text, flags=re.I):
+            value = _number_from_price_fragment(match)
+            if value is not None and 15_000 <= value <= 8_000_000:
+                pen_candidates.append(value)
+    if pen_candidates and PEN_PER_USD > 0:
+        return round(min(pen_candidates) / PEN_PER_USD)
+    return None
 
 
 def extract_area_m2(text: str) -> float | None:
     patterns = [
         r"([0-9]{1,4}(?:[.,][0-9]{1,2})?)\s*m(?:²|2)\s*(?:tot(?:ales?)?\.?)?",
-        r"[áa]rea(?:\s+total|\s+ocupada|\s+techada)?\s*[:\-]?\s*([0-9]{1,4}(?:[.,][0-9]{1,2})?)\s*m(?:²|2)",
+        r"([0-9]{1,4}(?:[.,][0-9]{1,2})?)\s*m²\s*(?:cubiertos?|construidos?)",
+        r"[áa]rea(?:\s+total|\s+ocupada|\s+techada|\s+construida)?\s*[:\-]?\s*([0-9]{1,4}(?:[.,][0-9]{1,2})?)\s*m(?:²|2)",
     ]
     values = []
     for pattern in patterns:
@@ -182,7 +232,7 @@ def candidate_blocks(soup: BeautifulSoup, base_url: str):
                 break
             block = block.parent
             text = clean_text(block.get_text(" ", strip=True))
-            if 80 <= len(text) <= 3500 and extract_price_usd(text):
+            if 60 <= len(text) <= 3500 and extract_price_usd(text):
                 break
         else:
             continue
@@ -197,13 +247,18 @@ def candidate_blocks(soup: BeautifulSoup, base_url: str):
         yield anchor, block, full_url, text
 
 
-def parse_page(source: str, property_type: str, district_slug: str, url: str, html: str) -> list[Listing]:
+def parse_page(source: str, property_type: str, district_slug: str | None, url: str, html: str) -> list[Listing]:
     soup = BeautifulSoup(html, "lxml")
     items: list[Listing] = []
 
     for anchor, block, full_url, text in candidate_blocks(soup, url):
         low = text.lower()
         if any(term in low for term in EXCLUDED_TERMS):
+            continue
+
+        district = district_from_text(text, district_slug)
+        if not district:
+            # Para fuentes globales de Lima no adivinamos el distrito.
             continue
 
         price = extract_price_usd(text)
@@ -222,9 +277,8 @@ def parse_page(source: str, property_type: str, district_slug: str, url: str, ht
                 title_candidates.append(candidate)
         title = title_candidates[0] if title_candidates else clean_text(anchor.get_text(" ", strip=True))
         if not title:
-            title = f"{property_type} en {DISTRICTS[district_slug]}"
+            title = f"{property_type} en {district}"
 
-        district = district_from_text(text, district_slug)
         risk_score = sum(penalty for term, penalty in RISK_TERMS.items() if term in low)
         listing_id = hashlib.sha1(full_url.encode("utf-8")).hexdigest()[:14]
 
@@ -330,11 +384,12 @@ def render_markdown(listings: list[Listing], new_ids: set[str], generated_at: st
         f"Actualizado: **{generated_at}**",
         f"Tope: **US$ {MAX_PRICE_USD:,}**",
         "",
-        "> El puntaje es orientativo. Una publicación barata puede esconder problemas legales, de posesión,",
-        "> independización, cargas o errores del aviso. Verifica partida registral y documentación antes de separar.",
+        "> Fuentes: Urbania, Adondevivir, Mercado Libre y LaEncontre.",
+        "> Los avisos publicados solo en soles usan una conversión aproximada configurable.",
+        "> El puntaje es orientativo. Verifica partida registral, cargas, posesión e independización antes de separar.",
         "",
-        "| Nueva | Puntaje | Distrito | Tipo | Precio | Área | US$/m² | Riesgo | Aviso |",
-        "|---|---:|---|---|---:|---:|---:|---:|---|",
+        "| Nueva | Fuente | Puntaje | Distrito | Tipo | Precio | Área | US$/m² | Riesgo | Aviso |",
+        "|---|---|---:|---|---|---:|---:|---:|---:|---|",
     ]
     for item in top:
         area = f"{item.area_m2:.1f}" if item.area_m2 else "—"
@@ -342,7 +397,7 @@ def render_markdown(listings: list[Listing], new_ids: set[str], generated_at: st
         new = "🆕" if item.id in new_ids else ""
         title = item.title.replace("|", "/")
         lines.append(
-            f"| {new} | {item.opportunity_score:.1f} | {item.district} | {item.property_type} | "
+            f"| {new} | {item.source} | {item.opportunity_score:.1f} | {item.district} | {item.property_type} | "
             f"${item.price_usd:,} | {area} | {ppm2} | {item.risk_score} | [{title}]({item.url}) |"
         )
     lines.append("")
@@ -366,7 +421,8 @@ def main() -> int:
         urls = urls[: int(limit_env)]
 
     for index, (source, property_type, district_slug, url) in enumerate(urls, start=1):
-        print(f"[{index}/{len(urls)}] {source} | {property_type} | {DISTRICTS[district_slug]}")
+        district_label = DISTRICTS[district_slug] if district_slug else "Lima (detección automática)"
+        print(f"[{index}/{len(urls)}] {source} | {property_type} | {district_label}")
         html = fetch(session, url)
         if html:
             all_items.extend(parse_page(source, property_type, district_slug, url, html))
@@ -383,6 +439,7 @@ def main() -> int:
     payload = {
         "generated_at": generated_at,
         "max_price_usd": MAX_PRICE_USD,
+        "sources": ["Urbania", "Adondevivir", "Mercado Libre", "LaEncontre"],
         "count": len(all_items),
         "new_count": len(new_ids),
         "listings": [asdict(item) for item in all_items],
