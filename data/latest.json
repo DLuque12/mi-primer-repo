@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T05:52:50+00:00",
+  "generated_at": "2026-10-12T15:17:35+00:00",
   "max_price_usd": 60000,
   "sources": [
     "Urbania",
@@ -8,10 +8,10 @@
     "LaEncontre"
   ],
   "count": 120,
-  "new_count": 98,
+  "new_count": 93,
   "listings": [
     {
-      "id": "6a1a881049dfac",
+      "id": "4aa398950728f3",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Lurín",
@@ -19,7 +19,7 @@
       "price_usd": 42000,
       "area_m2": 80.0,
       "price_per_m2": 525.0,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-vendo-departamento-de-80-m-sup2--en-piso-3-las-150188800.html",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-vendo-departamento-de-80-m-sup2--en-piso-3-las-150188800.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=6",
       "raw_text": "S/ 145,000 · USD 42,000 80 m² tot. 3 dorm. 1 baño Las Praderas de Lurin Las Praderas De Lurin, Lurín S/ 145,000 · USD 42,000 Departamento de 80 m² en Piso 3 de 3 Hab/ 1 Baños - Las Praderas de Lurin¡Ocasión! Vendo lindo departamento de estreno en Lurin. Las Praderas de LurinPrecio: $42, 000 (ligeramente negociable) Metraje: 80m²Piso: 3Vista a la calleAntigüedad: 3 añosDistribución: - Sala - comedor- Cocina- Lavandería- 3 habitaciones- 1 baño completo(no cuenta con estacionamiento Y no tiene ascensor) Lugar cerca a colegios, universidades y parques! A 5 min de la Antigua Panamericana SurA 10 min de la panamericana surLuz y agua independiente. Consultas al 9. 4. 3. 1. 8. 0. 0. 4. 0",
       "risk_score": 0,
       "opportunity_score": 94.0,
@@ -65,7 +65,7 @@
       "has_parking": false
     },
     {
-      "id": "e5c04ac6bfc6ec",
+      "id": "57bc0be2036322",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "San Juan de Miraflores",
@@ -73,11 +73,11 @@
       "price_usd": 31000,
       "area_m2": 82.0,
       "price_per_m2": 378.05,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-se-vende-departamento-de-3-dorm.-en-2.-piso-150973130.html?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=23",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-se-vende-departamento-de-3-dorm.-en-2.-piso-150973130.html?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=22",
       "raw_text": "S/ 103,540 · USD 31,000 82 m² tot. 3 dorm. 1 baño coperativa de vivienda santa ursula ltda. mz lote 25 San Juan de Miraflores, Lima S/ 103,540 · USD 31,000 ¡oportunidad para vivienda O inversión! Se vende departamento ubicado en segundo piso, en excelente ubicación entre la Av. Las Torres y la Av. Pastor Sevilla, con fácil acceso a principales vías, comercios y servicios. La propiedad se encuentra totalmente independizada y cuenta con: ️ 03 dormitorios. 01 baño. Segundo piso. Totalmente independizado. características Y opciones adicionales. - Actualmente cuenta con cobertura de techo de eternit. - no cuenta con servicios de luz y agua; se encuentra pendiente la instalación de las cajas de suministro individuales ante Luz del Sur y Sedapal. Ideal para inversión, así como para quienes buscan una propiedad con potencial de crecimiento y ampliación. Ubicación: entre Av. Las Torres y Av. Pastor Sevilla. ¡No dejes pasar esta oportunidad! Agenda tu visita y conoce la propiedad.",
       "risk_score": 0,
-      "opportunity_score": 91.9,
-      "discount_vs_median_pct": 43.6,
+      "opportunity_score": 91.6,
+      "discount_vs_median_pct": 43.3,
       "parking_status": "unknown",
       "parking_spaces": null,
       "has_parking": false
@@ -101,6 +101,24 @@
       "has_parking": false
     },
     {
+      "id": "f95d27f7a15943",
+      "source": "Urbania",
+      "property_type": "Departamento",
+      "district": "San Juan de Miraflores",
+      "title": "63 m² tot. 2 dorm. 1 baño",
+      "price_usd": 27000,
+      "area_m2": 63.0,
+      "price_per_m2": 428.57,
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-151328567?n_src=Listado&n_pg=1&n_pos=1",
+      "raw_text": "S/ 87,000 · USD 27,000 63 m² tot. 2 dorm. 1 baño Ramón Guerrero 300 San Juan de Miraflores, Lima El departamento esta en el 5to. Piso. un departamento por piso. frente al parque (virgen de las mercedes - ciudad de dios) un cuarto amplio. cocina. sala - comedor. un baño completo. area libre un aproximado 33. 00M2 para construir dos cuartos adicionales. area construida 30. 00M2. area total 63. 00M3. direccion: jr. Ramon guerrero 300 urbnizacion zona A - ciudad de dios -sjm. los servicios el agua Y la luz es compartido / la luz se puede independizar. precio: us$27, 000. 00 negociables. contacto: 9. 9. 4. 1. 8. 4. 2. 9. 8. miguel iberico",
+      "risk_score": 0,
+      "opportunity_score": 89.6,
+      "discount_vs_median_pct": 35.7,
+      "parking_status": "unknown",
+      "parking_spaces": null,
+      "has_parking": false
+    },
+    {
       "id": "ef51a1809b9c21",
       "source": "Urbania",
       "property_type": "Terreno",
@@ -119,25 +137,7 @@
       "has_parking": false
     },
     {
-      "id": "1afc261f9b6fdb",
-      "source": "Adondevivir",
-      "property_type": "Departamento",
-      "district": "San Miguel",
-      "title": "1122 un. 1 a 3 dorm. 23 a 74 m² tot.",
-      "price_usd": 45337,
-      "area_m2": 74.0,
-      "price_per_m2": 612.66,
-      "url": "https://www.adondevivir.com/propiedades/proyecto/ememvein-costanova-lanzamiento!-147170397.html?n_src=Listado&n_pg=1&n_pos=3",
-      "raw_text": "Departamentos desde S/ 156,414 1122 un. 1 a 3 dorm. 23 a 74 m² tot. Av. Costanera 1650 San Miguel, Lima S/ 156,414 Gimnasio Piscina Área de juegos Parrilla Áreas verdes ¡Vive donde el mar inspira! Un proyecto diseñado para quienes buscan disfrutar la vida con estilo, comodidad y una vista privilegiada. Vive rodeado de áreas pensadas para el bienestar y la conexión: piscina panorámica, alameda central, lounge bar, sum + terraza, coworking, gimnasio y lobby. Además, disfruta de zonas de parrillas, terraza gourmet, zona para niños, sala de juegos y pet zone.",
-      "risk_score": 0,
-      "opportunity_score": 88.0,
-      "discount_vs_median_pct": 57.7,
-      "parking_status": "unknown",
-      "parking_spaces": null,
-      "has_parking": false
-    },
-    {
-      "id": "c6be619e596211",
+      "id": "a7a5624b349f38",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "San Miguel",
@@ -145,11 +145,29 @@
       "price_usd": 53623,
       "area_m2": 97.0,
       "price_per_m2": 552.81,
-      "url": "https://www.adondevivir.com/propiedades/proyecto/ememhvin-alameda-san-miguel-144319116.html?n_src=Listado&n_pg=1&n_pos=4",
+      "url": "https://www.adondevivir.com/propiedades/proyecto/ememhvin-alameda-san-miguel-144319116.html?n_src=Listado&n_pg=1&n_pos=3",
       "raw_text": "Departamentos desde S/ 185,000 200 un. 1 a 3 dorm. 26 a 97 m² tot. Esquina Av. Precursores y Av. Elmer Faucett, San Miguel San Miguel, Lima S/ 185,000 Gimnasio Piscina Parrilla Vive el nuevo estilo de vida en San Miguel. Conoce Alameda San Miguel, un proyecto en construcción ideal para quienes buscan comodidad, excelente ubicación y alta proyección de valorización. Ubicado estratégicamente cerca de universidades, restaurantes y a solo minutos del centro comercial Plaza San Miguel, tendrás todo lo que necesitas al alcance de tu día a día. Al invertir en esta etapa, accedes a mejores precios, mayor valorización y la seguridad de un proyecto en desarrollo formal, respaldado y planificado para tu tranquilidad. El proyecto destaca por sus completas áreas sociales diseñadas para disfrutar sin salir de casa, como gimnasio equipado, sala de usos múltiples, zona de parrillas, co-working, piscina y un exclusivo sky bar, con espacios pensados para relajarte y compartir. Invierte hoy con visión y asegura tu lugar en una de las zonas con mayor crecimiento de Lima.",
       "risk_score": 0,
       "opportunity_score": 88.0,
       "discount_vs_median_pct": 61.9,
+      "parking_status": "unknown",
+      "parking_spaces": null,
+      "has_parking": false
+    },
+    {
+      "id": "8bb61499595a40",
+      "source": "Adondevivir",
+      "property_type": "Departamento",
+      "district": "San Miguel",
+      "title": "1122 un. 1 a 3 dorm. 23 a 74 m² tot.",
+      "price_usd": 45337,
+      "area_m2": 74.0,
+      "price_per_m2": 612.66,
+      "url": "https://www.adondevivir.com/propiedades/proyecto/ememvein-costanova-lanzamiento!-147170397.html?n_src=Listado&n_pg=1&n_pos=9",
+      "raw_text": "Departamentos desde S/ 156,414 1122 un. 1 a 3 dorm. 23 a 74 m² tot. Av. Costanera 1650 San Miguel, Lima S/ 156,414 Gimnasio Piscina Área de juegos Parrilla Áreas verdes ¡Vive donde el mar inspira! Un proyecto diseñado para quienes buscan disfrutar la vida con estilo, comodidad y una vista privilegiada. Vive rodeado de áreas pensadas para el bienestar y la conexión: piscina panorámica, alameda central, lounge bar, sum + terraza, coworking, gimnasio y lobby. Además, disfruta de zonas de parrillas, terraza gourmet, zona para niños, sala de juegos y pet zone.",
+      "risk_score": 0,
+      "opportunity_score": 88.0,
+      "discount_vs_median_pct": 57.7,
       "parking_status": "unknown",
       "parking_spaces": null,
       "has_parking": false
@@ -173,7 +191,7 @@
       "has_parking": true
     },
     {
-      "id": "59e1a52a8712b5",
+      "id": "7aa7e8b6972aaf",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "San Juan de Miraflores",
@@ -181,11 +199,11 @@
       "price_usd": 40000,
       "area_m2": 92.0,
       "price_per_m2": 434.78,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-151096328.html?n_src=Listado&n_pg=1&n_pos=17",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-151096328.html?n_src=Listado&n_pg=1&n_pos=24",
       "raw_text": "S/ 134,400 · USD 40,000 92 m² tot. Calle Las Orquídeas San Juan de Miraflores, Lima S/ 134,400 · USD 40,000 Se vende departamento de 92mts, ubicado en el 4to piso en la Calle Las Orquídeas, en el distrito de San Juan de Miraflores. Propiedad con gran potencial para inversión. El inmueble actualmente cuenta con inquilino precario, por lo que se vende en las condiciones actuales, ideal para inversionistas que busquen adquirir una propiedad a buen precio y gestionar posteriormente la posesión. Buena ubicación en zona urbana del distritoDepartamento con potencial de valorizaciónPrecio competitivo por condición del inmuebleCaracterísticas: * Ubicado cerca a la Av Cesar Canevaro* Cerca de transporte público, comercios y servicios* Buena conectividad dentro del distritoCondiciones de venta: Propiedad inscrita en Registros PúblicosVenta en condición actual (con inquilino precario) Las imágenes y/o información de este inmueble son de carácter referencial. R. uc.: Razón social: Inversiones Delia S. A. C.",
       "risk_score": 0,
-      "opportunity_score": 85.1,
-      "discount_vs_median_pct": 35.1,
+      "opportunity_score": 84.8,
+      "discount_vs_median_pct": 34.8,
       "parking_status": "unknown",
       "parking_spaces": null,
       "has_parking": false
@@ -209,7 +227,7 @@
       "has_parking": false
     },
     {
-      "id": "5f404bf51593f4",
+      "id": "c0778362c224ad",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "San Miguel",
@@ -217,7 +235,7 @@
       "price_usd": 58208,
       "area_m2": 68.0,
       "price_per_m2": 856.0,
-      "url": "https://www.adondevivir.com/propiedades/proyecto/ememefin-la-marina-3420-146948101.html?n_src=Listado&n_pg=1&n_pos=10",
+      "url": "https://www.adondevivir.com/propiedades/proyecto/ememefin-la-marina-3420-146948101.html?n_src=Listado&n_pg=1&n_pos=8",
       "raw_text": "Departamentos desde S/ 200,818 227 un. 1 a 3 dorm. 28 a 68 m² tot. La Marina 3420 Lima, San Miguel S/ 200,818 Gimnasio Piscina Área de juegos Parrilla Áreas verdes Descubre La Marina 3420, el nuevo proyecto de Evergran, ubicado en la zona más estratégica de San Miguel, en la misma Av. La Marina, con fácil acceso a la Av. Faucett, universidades y centros comerciales. Vive conectado con todo lo que necesitas, en una zona llena de vida, comercios y servicios. Este moderno desarrollo ofrece departamentos desde 28 m² con opciones de 1, 2 dormitorios y 2 dormitorios + estudio, ideales para quienes buscan comodidad, funcionalidad y una excelente ubicación. Diseñado para brindarte un nuevo estilo de vida, La Marina 3420 combina practicidad y bienestar para que tú y tu familia disfruten cada día al máximo. ¡Un proyecto pensado para ti, cerca de todo! La Marina 3420 es un proyecto de viviendas de interés social que cuenta con el Bono Mivivienda Verde, lo que garantiza la incorporación de criterios de sostenibilidad en su diseño y construcción. Esto significa que al vivir aquí, podrás ahorrar hasta un 30% en gastos de servicios básicos como luz y agua.",
       "risk_score": 0,
       "opportunity_score": 81.8,
@@ -353,7 +371,7 @@
       "has_parking": false
     },
     {
-      "id": "80e205d287fc7f",
+      "id": "397d2c1547581a",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "San Juan de Miraflores",
@@ -361,26 +379,8 @@
       "price_usd": 55675,
       "area_m2": 106.0,
       "price_per_m2": 525.24,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-1-dormitorio-151303101?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=7",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-1-dormitorio-151303101?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=8",
       "raw_text": "S/ 192,080 · USD 56,000 106 m² tot. 1 dorm. 1 baño Zona B URB SAN Juan JR. Manuel Montero Rosas San Juan de Miraflores, Lima Contactoerika sanchezVer datosBuscas una propiedad independiente con espacio para vivir, ampliar o desarrollar un proyecto propio? Esta puede ser tu oportunidad. Se vende azotea independizada con partida registral propia, ubicada en el cuarto piso de un edificio frente a parque, en una zona estratégica de San Juan de Miraflores. Zona bárea ocupada: 106. 22 m²Área techada: 40. 56 m²La propiedad combina una amplia zona libre con ambientes construidos en material noble y drywall: -1 habitación-1 almacén-1 baño completo-Cocina abierta-Amplia área libre, ideal para terraza, zona social, lavandería, jardín urbano o futura ampliación-Partida registral independiente-Unidad inmobiliaria independizada-Ubicada en cuarto piso-Frente a parque-Gran potencial de remodelación y crecimientoCerca de la Av. Panamericana Sur, Mall del Sur, centros comerciales, colegios, bancos, supermercados y transporte público. Una excelente alternativa para quien busca independizarse, invertir o aprovechar un espacio con múltiples posibilidades.? Agenda tu visita y descubre todo el potencial ",
-      "risk_score": 0,
-      "opportunity_score": 66.3,
-      "discount_vs_median_pct": 21.7,
-      "parking_status": "unknown",
-      "parking_spaces": null,
-      "has_parking": false
-    },
-    {
-      "id": "4acc6fa553989e",
-      "source": "Adondevivir",
-      "property_type": "Departamento",
-      "district": "San Juan de Miraflores",
-      "title": "106 m² tot. 1 dorm. 1 baño",
-      "price_usd": 56000,
-      "area_m2": 106.0,
-      "price_per_m2": 528.3,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-venta-de-azotea-independizada-con-area-construida-151303111.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=12",
-      "raw_text": "S/ 192,080 · USD 56,000 106 m² tot. 1 dorm. 1 baño Zona B URB SAN Juan JR. Manuel Montero Rosas San Juan de Miraflores, Lima S/ 192,080 · USD 56,000 Contactoerika sanchezVer datosBuscas una propiedad independiente con espacio para vivir, ampliar o desarrollar un proyecto propio? Esta puede ser tu oportunidad. Se vende azotea independizada con partida registral propia, ubicada en el cuarto piso de un edificio frente a parque, en una zona estratégica de San Juan de Miraflores. Zona bárea ocupada: 106. 22 m²Área techada: 40. 56 m²La propiedad combina una amplia zona libre con ambientes construidos en material noble y drywall: -1 habitación-1 almacén-1 baño completo-Cocina abierta-Amplia área libre, ideal para terraza, zona social, lavandería, jardín urbano o futura ampliación-Partida registral independiente-Unidad inmobiliaria independizada-Ubicada en cuarto piso-Frente a parque-Gran potencial de remodelación y crecimientoCerca de la Av. Panamericana Sur, Mall del Sur, centros comerciales, colegios, bancos, supermercados y transporte público. Una excelente alternativa para quien busca independizarse, invertir o aprovechar un espacio con múltiples posibilidades.? Agenda tu visita y des",
       "risk_score": 0,
       "opportunity_score": 66.0,
       "discount_vs_median_pct": 21.2,
@@ -389,7 +389,25 @@
       "has_parking": false
     },
     {
-      "id": "028b6ffcef1f2f",
+      "id": "ed95bfca243f40",
+      "source": "Adondevivir",
+      "property_type": "Departamento",
+      "district": "San Juan de Miraflores",
+      "title": "106 m² tot. 1 dorm. 1 baño",
+      "price_usd": 56000,
+      "area_m2": 106.0,
+      "price_per_m2": 528.3,
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-venta-de-azotea-independizada-con-area-construida-151303111.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=8",
+      "raw_text": "S/ 192,080 · USD 56,000 106 m² tot. 1 dorm. 1 baño Zona B URB SAN Juan JR. Manuel Montero Rosas San Juan de Miraflores, Lima S/ 192,080 · USD 56,000 Contactoerika sanchezVer datosBuscas una propiedad independiente con espacio para vivir, ampliar o desarrollar un proyecto propio? Esta puede ser tu oportunidad. Se vende azotea independizada con partida registral propia, ubicada en el cuarto piso de un edificio frente a parque, en una zona estratégica de San Juan de Miraflores. Zona bárea ocupada: 106. 22 m²Área techada: 40. 56 m²La propiedad combina una amplia zona libre con ambientes construidos en material noble y drywall: -1 habitación-1 almacén-1 baño completo-Cocina abierta-Amplia área libre, ideal para terraza, zona social, lavandería, jardín urbano o futura ampliación-Partida registral independiente-Unidad inmobiliaria independizada-Ubicada en cuarto piso-Frente a parque-Gran potencial de remodelación y crecimientoCerca de la Av. Panamericana Sur, Mall del Sur, centros comerciales, colegios, bancos, supermercados y transporte público. Una excelente alternativa para quien busca independizarse, invertir o aprovechar un espacio con múltiples posibilidades.? Agenda tu visita y des",
+      "risk_score": 0,
+      "opportunity_score": 65.6,
+      "discount_vs_median_pct": 20.8,
+      "parking_status": "unknown",
+      "parking_spaces": null,
+      "has_parking": false
+    },
+    {
+      "id": "dd30cc42d3e599",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Barranco",
@@ -397,7 +415,7 @@
       "price_usd": 5000,
       "area_m2": 92.0,
       "price_per_m2": null,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-venta-dpto-de-estreno-en-barranco-92-m-sup2--2-148981106.html?n_src=Listado&n_pills=Guardian%C3%ADa%2FSeguridad+privada&n_pg=1&n_pos=21",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-venta-dpto-de-estreno-en-barranco-92-m-sup2--2-148981106.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=8",
       "raw_text": "Excelente oportunidad en Barranco, Av. San Martín una de las zonas más buscadas del distrito, cerca a comercios, cafés, restaurantes y principales vías de acceso. Departamento de estreno, ubicado en piso 4 con vista a la calle. Edificio moderno de solo 5 pisos, con seguridad 24 horas y dos ascensores. Ideal para jóvenes profesionales, parejas o inversionistas que buscan alta demanda de alquiler en una zona premium. Área total: 92 m2. Precio Dpto: usd 230, 000. Mantenimiento: S/ 450. Antigüedad del edificio: 10 años. Precio depósito: 5000 dólares. Incluye cochera doble amplia. Acabados: Pisos de porcelanato tipo madera (formato alistonado). Reposteros de cocina, closets y muebles en melamina. Tableros de granito en cocina. Distribución: Sala comedor amplia y muy iluminada con vista exterior. Cocina cerrada con muebles altos y bajos y tablero de granito. Lavandería cerrada e independiente (no integrada a la cocina). Terma y cocina a gas con balón (no cuenta con Gas Cálidda). Dormitorio principal amplio (entra cama king), con baño incorporado y walk-in closet tipo pasillo. Segundo dormitorio con closet. Segundo baño completo para dormitorio secundario y visitas. Edificio tipo boutique",
       "risk_score": 0,
       "opportunity_score": 65.0,
@@ -443,7 +461,7 @@
       "has_parking": false
     },
     {
-      "id": "c2fee88d1274ef",
+      "id": "3c846b4613bd1b",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Villa El Salvador",
@@ -451,7 +469,7 @@
       "price_usd": 48000,
       "area_m2": 120.0,
       "price_per_m2": 400.0,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-se-vende-departamento-en-villa-el-salvador-3-dorm.-151265885.html?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=4",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-se-vende-departamento-en-villa-el-salvador-3-dorm.-151265885.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=4",
       "raw_text": "S/ 165,000 · USD 48,000 120 m² tot. 3 dorm. 2 baños Villa el Salvador Villa el Salvador, Lima S/ 165,000 · USD 48,000 Amplio departamento de 120 M² en venta – villa el salvador | Todo el piso 3. Precio: us$48, 000 | Equivalente a S/165, 000 Soles. Disfruta de ambientes amplios y una distribución con potencial para adaptarse a tu familia. Ubicado en el tercer piso, este departamento cuenta con dos dormitorios y espacio para implementar un tercero vista a calle partiendo la enorme sala (Drywall) Características: - Amplia y luminosa sala-comedor (Opción Dorm. 3) - Cocina espaciosa. - Dos dormitorios; el principal con baño propio. - Un baño completo para visitas. - Amplios ambientes y buen estado de conservación solo 10 años de antigüedad. Ubicación estratégica. En el sector 3 de Villa El Salvador, cerca de las avenidas Los Álamos y av. Talara, a 2 cuadras del Parque Zonal Huáscar, colegios privados, parques y transporte público que pasan por Álamos y Talara. Servicios. - Gas Cálidda con medidor independiente. - Nicho para caja de luz instalado; suministro independiente en trámite ante Luz del Sur. (Actualmente se comparte luz del medidor central) - Agua común. Opciones referenciales d",
       "risk_score": 0,
       "opportunity_score": 61.0,
@@ -479,42 +497,6 @@
       "has_parking": true
     },
     {
-      "id": "221924a92731ce",
-      "source": "Urbania",
-      "property_type": "Departamento",
-      "district": "Barranco",
-      "title": "S/ 90 Mantenimiento",
-      "price_usd": 16000,
-      "area_m2": 12.0,
-      "price_per_m2": 1333.33,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-barranco-lima-151268234?n_src=Listado&n_pills=Guardian%C3%ADa%2FSeguridad+privada&n_pg=1&n_pos=1",
-      "raw_text": "S/ 55,433 · USD 16,000 S/ 90 Mantenimiento 12 m² tot. 1 estac. AV Almirante Grau 1380 Cochera N°167 - Barranco Barranco, Lima Cochera en venta – N. ° 167Se vende cochera ubicada en sótano, de fácil acceso y con buena maniobrabilidad. Cuenta con espacio para vehículo y se encuentra delimitada e identificada con el N. ° 167. Área referencial: 12 m²Cochera independiente y de fácil accesoUbicada en edificio con estacionamiento privadoExcelente opción para propietarios o inversionistas que buscan un espacio seguro para estacionamiento.",
-      "risk_score": 0,
-      "opportunity_score": 61.0,
-      "discount_vs_median_pct": null,
-      "parking_status": "included",
-      "parking_spaces": 1,
-      "has_parking": true
-    },
-    {
-      "id": "fd3595de1c6624",
-      "source": "Adondevivir",
-      "property_type": "Departamento",
-      "district": "Barranco",
-      "title": "12 m² tot. 1 estac.",
-      "price_usd": 16000,
-      "area_m2": 12.0,
-      "price_per_m2": 1333.33,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-se-vende-cochera-en-barranco-151268245.html?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=17",
-      "raw_text": "S/ 55,433 · USD 16,000 S/ 90 Mantenimiento 12 m² tot. 1 estac. AV Almirante Grau 1380 Cochera N°167 - Barranco Barranco, Lima S/ 55,433 · USD 16,000 Cochera en venta – N. ° 167Se vende cochera ubicada en sótano, de fácil acceso y con buena maniobrabilidad. Cuenta con espacio para vehículo y se encuentra delimitada e identificada con el N. ° 167. Área referencial: 12 m²Cochera independiente y de fácil accesoUbicada en edificio con estacionamiento privadoExcelente opción para propietarios o inversionistas que buscan un espacio seguro para estacionamiento.",
-      "risk_score": 0,
-      "opportunity_score": 61.0,
-      "discount_vs_median_pct": null,
-      "parking_status": "included",
-      "parking_spaces": 1,
-      "has_parking": true
-    },
-    {
       "id": "0a6108493dbe7b",
       "source": "Urbania",
       "property_type": "Departamento",
@@ -533,7 +515,7 @@
       "has_parking": false
     },
     {
-      "id": "4c8de896c8097a",
+      "id": "35419281cfac62",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "Chorrillos",
@@ -541,7 +523,7 @@
       "price_usd": 55000,
       "area_m2": 80.0,
       "price_per_m2": 687.5,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-chorrillos-lima-2-dormitorios-62384341?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=2",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-chorrillos-lima-2-dormitorios-62384341?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=2",
       "raw_text": "S/ 187,000 · USD 55,000 S/ 80 Mantenimiento 80 m² tot. 2 dorm. 1 baño AV. JOSE OLAYA Chorrillos, Lima Ubicado an la av. Jose olaya cuadra 7, A 2 cuadras del malecon grau de chorrillos, A 3 cuadras de la costa verde. ubicado en el piso 5 sin ascensor, tiene 2 dormitorios construidos, un baño completo Y amplio patio. Ideal para hacer un departamento con terraza Y zona de parrilla. el edificio tiene 4 pisos Y esta ubicado en una esquina, tiene una hermosa vista al mar. contactarse 9 8 7 3 4 1 0 2 5",
       "risk_score": 0,
       "opportunity_score": 59.3,
@@ -587,7 +569,7 @@
       "has_parking": false
     },
     {
-      "id": "4c24665e5d3b0c",
+      "id": "dd43748f2d9625",
       "source": "Adondevivir",
       "property_type": "Terreno",
       "district": "San Luis",
@@ -595,7 +577,7 @@
       "price_usd": 14243,
       "area_m2": 130.0,
       "price_per_m2": 109.56,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/vecltein-terreno-comercial-de-130-m-sup2--en-san-luis-zona-150791220.html?n_src=Listado&n_pg=1&n_pos=7",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/vecltein-terreno-comercial-de-130-m-sup2--en-san-luis-zona-150791220.html?n_src=Listado&n_pg=1&n_pos=3",
       "raw_text": "S/ 48,000 · USD 14,243 130 m² tot. 2 dorm. 3 baños Av. Río Chincha 155 San Luis, Lima S/ 48,000 · USD 14,243 Excelente oportunidad de inversión: se alquila terreno comercial de 130 m² en San Luis, en una de las zonas más estratégicas del distrito, a pocos minutos de Av. Aviación y a cuadras de Av. Nicolás Arriola, con acceso rápido a las principales vías de la ciudad. La propiedad cuenta con 130 m² de terreno, 2 habitaciones y 3 baños, ofreciendo un espacio versátil y funcional para múltiples usos. Su ubicación privilegiada y distribución la convierten en una alternativa ideal para instalar un negocio, oficina, almacén, taller u otro proyecto comercial, sujeto a las condiciones de uso permitidas en la zona. San Luis es un distrito de alto tránsito comercial y fácil conectividad, lo que garantiza visibilidad y accesibilidad constante para tu negocio. No dejes pasar esta oportunidad. Agenda tu visita hoy mismo y conoce todo el potencial de este terreno.",
       "risk_score": 0,
       "opportunity_score": 58.0,
@@ -605,7 +587,7 @@
       "has_parking": false
     },
     {
-      "id": "c0e582644f2d83",
+      "id": "21e24dfd1b524f",
       "source": "Urbania",
       "property_type": "Terreno",
       "district": "Jesús María",
@@ -613,7 +595,7 @@
       "price_usd": 20377,
       "area_m2": 95.0,
       "price_per_m2": 214.49,
-      "url": "https://urbania.pe/inmueble/clasificado/vecltein-venta-de-terreno-en-jesus-maria-lima-149283822?n_src=Listado&n_pills=Guardian%C3%ADa%2FSeguridad+privada&n_pg=1&n_pos=8",
+      "url": "https://urbania.pe/inmueble/clasificado/vecltein-venta-de-terreno-en-jesus-maria-lima-149283822?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=8",
       "raw_text": "️️ exclusivo departamento en jesus maria. En edificio ya construido independizado, para comprarlo con cualquier crédito bancario y con departamentos ya listos para que te mudes inmediatamente. Si estás buscando modernidad, seguridad Y comodidad, esta propiedad es para tí Vive en el corazón de Jesús María, a pocos pasos de la Universidad del Pacífico, la Cámara de Comercio de Lima, Centros comerciales como el real plaza salaverry, parques, restaurantes y cafeterías. El departamento de estreno fue diseñado en su interiores por la reconocida arquitecta Karim Chamán. Aquí conocerás un departamento con ambientes amplios y muy bien distribuidos. área total: apróx. 95 m² Departamentos 1901, 2001, 2201 con excelente iluminación y ventilación natural, y vista A calle, agradable, al exterior del edificio (últimos disponibles). Precio de cochera aparte desde s/. 70 300 soles. Tiene la siguiente distribución: - Sala - Comedor amplios con vista a la calle que se integran con el balcón y la cocina. - Cocina estilo americana moderna equipada con reposteros altos y bajos y tableros de cuarzo, y línea blanca. - 3 puntos de gas natural para cocina, lavadora y terma. - Lavandería independiente amplia",
       "risk_score": 0,
       "opportunity_score": 58.0,
@@ -623,7 +605,7 @@
       "has_parking": false
     },
     {
-      "id": "785d78d0a75df9",
+      "id": "8288dc6b51632f",
       "source": "Adondevivir",
       "property_type": "Terreno",
       "district": "Chorrillos",
@@ -631,7 +613,7 @@
       "price_usd": 16700,
       "area_m2": 350.0,
       "price_per_m2": null,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/vecltein-terreno-en-chorrillos-se-alquila-o-vende-desde-2-000-147069057.html?n_src=Listado&n_pg=1&n_pos=2",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/vecltein-terreno-en-chorrillos-se-alquila-o-vende-desde-2-000-147069057.html?n_src=Listado&n_pg=1&n_pos=11",
       "raw_text": "Terreno 8 350 m² rdb en Chorrillos – Proyecto de 3 pisos / 40 % de área libre—Último macro-lote rdb (Residencial Densidad Baja) de 8 350 m² en el corazón de Chorrillos, sobre Prolong. 12 de Octubre (Km 20, 5 Pan. Sur Antigua). Zonificación: rdb – hasta 3 pisos, 40 % área libre, 1 estacionamiento por unidad (O. M. 1430-mml). ——alquiler – us$ 2, 00/m²——[Precio en soles es referencial]Alquiler Lote desde 1 500 m² — Patio de Maniobras / Depósito a Cielo Abierto en ChorrillosDescripción: ¿Buscas espacio inmediato para flota pesada? Ofrecemos áreas desde 1 500 m² hasta 8 350 m², con: Superficie compactada lista para losa. Perímetro seguro (175 m) para cerco y garita. Conexión rápida a Av. Defensores del Morro y Pan. Sur. Renta referencial (lote completo): us$ 16 700/mes — Consulta valor según metraje requerido. ——venta – us$ 700/m²——[Precio en soles es referencial]Terreno 8 350 m² — Frente 40 m — Potencial Patio Logístico o Almacén Urbano, ChorrillosDescripción: Gran lote saneado de 8 350 m² en Prol. 12 de Octubre (Km 20, 5 Pan. Sur Antigua), fácilmente segregable desde 2 000 m². Zonificación actual: rdb (Residencial Densidad Baja) — viable cambio a uso logístico con dictamen municipal. ",
       "risk_score": 0,
       "opportunity_score": 58.0,
@@ -695,24 +677,6 @@
       "has_parking": false
     },
     {
-      "id": "569b8379727f8a",
-      "source": "Adondevivir",
-      "property_type": "Departamento",
-      "district": "Miraflores",
-      "title": "Luxury Oceanfront, +51. 9.. 8.. 5.. 6.. 3.. 9.. 6.. 7.. 6 amplio lujoso 240 m2 acabados de Lujo. Moderno Departamento Frente al mar, lujosos acabados 3 dormitorios + 1 cuarto de servicio. Edificio his",
-      "price_usd": 6900,
-      "area_m2": 240.0,
-      "price_per_m2": null,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-luxury-oceanfront-larcomar-miraflores-4dorm.-148195501.html?n_src=Listado&n_pills=Parrilla&n_pg=1&n_pos=25",
-      "raw_text": "Luxury Oceanfront, +51. 9.. 8.. 5.. 6.. 3.. 9.. 6.. 7.. 6 amplio lujoso 240 m2 acabados de Lujo. Moderno Departamento Frente al mar, lujosos acabados 3 dormitorios + 1 cuarto de servicio. Edificio histórico, completamente remodelado. contrato de 1 año $6900. En venta y/o alquiler lujoso departamento frente al mar! \" caracteristicas: - 240 m2. - vista al mar. - sala. - comedor. - sala con calefaccion. - amplio gym C/ baño privado. - 3dorm + cuarto servicio. - dorm principal con walking closet Y amplio baño. - amplia sala con vista al mar. - 2 amplios balcones. - 4. 5 baños. - ascensor moderno. - porteria 24hrs. Welcome to Oceanfront next door jw Marriott. An exceptional two floor residence with stunning ocean and city skyline views. Designed by acclaimed firm Arquitect. This extraordinaire hosts 4 beds + 5. 5 baths. Enjoy privacy with the luxurious master suite on a dedicated full floor, accompanied by a study and large bath overlooking the expansive personal terrace, private gym. Beyond the primary terrace, head up to the incredible deck - perfect for entertaining & soaking up the sun. 24-hr concierge, fitness studio, yoga, direct beach access to Larcomar shooping center. Oceanfron",
-      "risk_score": 0,
-      "opportunity_score": 57.0,
-      "discount_vs_median_pct": null,
-      "parking_status": "unknown",
-      "parking_spaces": null,
-      "has_parking": false
-    },
-    {
       "id": "d954adfd4f8454",
       "source": "Urbania",
       "property_type": "Departamento",
@@ -731,7 +695,25 @@
       "has_parking": false
     },
     {
-      "id": "ed17bf189271f4",
+      "id": "f67743ddc1bccd",
+      "source": "Adondevivir",
+      "property_type": "Departamento",
+      "district": "San Isidro",
+      "title": "Vive como en una casa, con la comodidad de un departamento! Rosario de Villa – Chorrillos. Si buscas amplitud, comodidad y espacios para disfrutar en familia, esta propiedad es para ti. Ubicado en una",
+      "price_usd": 15000,
+      "area_m2": 156.0,
+      "price_per_m2": null,
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-estreno-departamento-en-primer-piso-no-paga-alcabala-150286997.html?n_src=Listado&n_pg=1&n_pos=30",
+      "raw_text": "Vive como en una casa, con la comodidad de un departamento! Rosario de Villa – Chorrillos. Si buscas amplitud, comodidad y espacios para disfrutar en familia, esta propiedad es para ti. Ubicado en una de las zonas residenciales más valoradas de Chorrillos, este hermoso departamento en primer piso te ofrece el equilibrio perfecto entre tranquilidad, seguridad y una excelente ubicación. Disfruta de una amplia terraza privada, ideal para compartir momentos inolvidables con familiares y amigos. De estreno - no paga alcabala. Zona de parrilla. Grass sintético decorativo. ️️ Techo retráctil que te protege del sol y la lluvia durante todo el año. Características destacadas. 156 m² de área total. ️ 4 cómodos dormitorios. ️ Amplia sala y comedor. ️ Cocina funcional con reposteros altos y bajos. Cocina conexión a gas natural. Terma a gas. Ambientes acogedores y confortables. Seguridad para mayor tranquilidad. Cochera ($15 000) ¿Por qué vivir en Rosario de Villa? Rodeado de parques y áreas verdes. Cerca de la estación Rosario de Villa del Metropolitano. ️ A pocos minutos de Plaza Lima Sur. Cerca de colegios, universidades y servicios. Fácil acceso a Barranco, Miraflores, Surco y San Isidro. U",
+      "risk_score": 0,
+      "opportunity_score": 57.0,
+      "discount_vs_median_pct": null,
+      "parking_status": "unknown",
+      "parking_spaces": null,
+      "has_parking": false
+    },
+    {
+      "id": "c1f27caae61c8e",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Chorrillos",
@@ -739,7 +721,7 @@
       "price_usd": 60000,
       "area_m2": 87.0,
       "price_per_m2": 689.66,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-oportunidad-de-inversion-en-chorrillos-150280253.html?n_src=Listado&n_pg=1&n_pos=21",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-oportunidad-de-inversion-en-chorrillos-150280253.html?n_src=Listado&n_pg=1&n_pos=15",
       "raw_text": "S/ 210,000 · USD 60,000 87 m² tot. 3 dorm. 2 baños R252+6w6 Chorrillos, Lima S/ 210,000 · USD 60,000 Las Delicias de Villa – ChorrillosSe vende acogedor departamento con espacios cómodos y funcionales, ideal para familias o inversionistas que buscan una propiedad en una zona de alta demanda. Área total: 87. 54 m²2do pisoCaracterísticas: 3 dormitorios2 bañosSala y comedorCocinaExcelente distribución de ambientesBeneficios: • Zona residencial y tranquila• Fácil acceso a principales vías• Cercano a colegios, mercados y comercios• Buena proyección de valorizaciónUna excelente alternativa para vivir o invertir. Solicita más información y agenda tu visita. T. C. 3. 50Tipo de cambio referencial, sujeto a variación diaria por fluctuación del mercado",
       "risk_score": 0,
       "opportunity_score": 55.1,
@@ -765,6 +747,24 @@
       "parking_status": "included",
       "parking_spaces": 27,
       "has_parking": true
+    },
+    {
+      "id": "c2795f2586fb87",
+      "source": "Adondevivir",
+      "property_type": "Departamento",
+      "district": "San Isidro",
+      "title": "Lujoso departamento de estreno en San Isidro frente al Golf, Descripción: - 4 dormitorios- Cuarto principal con walking closet y balcón propio- Cuartos secundarios con baño incorporado y acceso al bal",
+      "price_usd": 18000,
+      "area_m2": 302.0,
+      "price_per_m2": null,
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-departamento-en-venta-151175965.html?n_src=Listado&n_pills=Piscina&n_pg=1&n_pos=18",
+      "raw_text": "Lujoso departamento de estreno en San Isidro frente al Golf, Descripción: - 4 dormitorios- Cuarto principal con walking closet y balcón propio- Cuartos secundarios con baño incorporado y acceso al balcón independiente - Home office - 4. 5 baños- Sala - Comedor- Cocina abierta- Lavanderia - Cuarto y baño de servicio - Sala de estar- Amplio balcón - Ascensor directo- Ascensor de servicio Características: - 302 m2Áreas Comunes: * Lobby de diseño* Terraza con bar* Sala para jóvenes y adultos* Sala de usos múltiples* Piscina* Gimnasio* JacuzziCaracterísticas del Edificio: * Edificio de 22 pisos con solo 60 departamentos (alta exclusividad) * 7 niveles de sótanos* Estacionamientos para visitas* Estacionamientos para bicicletas* Subestación eléctrica* Grupo electrógeno* Fibra óptica* Estación de carga para autos eléctricos* Ascensor de serviciototalmente independientesale directo a VivandaPrecio: $1, 212, 000 Dólares. Incluye dos estacionamientos Disponibles en los pisos: 11- 12: 302. 57 m2 - $1, 212, Ver datos: 302. 57 m2 - $1, 302, 000 19: 302. 57 m2 - $1, 400, 000estacionamiento desde $18000Hay disponibilidad de cocheras y depósitos adicionales. Además, también tienen la opción de adqu",
+      "risk_score": 0,
+      "opportunity_score": 55.0,
+      "discount_vs_median_pct": null,
+      "parking_status": "optional",
+      "parking_spaces": null,
+      "has_parking": false
     },
     {
       "id": "c9ca7cd3db5f82",
@@ -839,7 +839,7 @@
       "has_parking": false
     },
     {
-      "id": "caece48f5eebb5",
+      "id": "2466cc97775bab",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Lurín",
@@ -847,7 +847,7 @@
       "price_usd": 56000,
       "area_m2": 54.0,
       "price_per_m2": 1037.04,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-departamento-en-3er-piso-en-venta-con-ascensor-54-151262148.html",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-departamento-en-3er-piso-en-venta-con-ascensor-54-151262148.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=3",
       "raw_text": "S/ 192,360 · USD 56,000 S/ 150 Mantenimiento 54 m² tot. 2 dorm. 2 baños Lurin Lurín, Lima S/ 192,360 · USD 56,000 Venta de acogedor departamento en 3er piso de 54 m2, con ascensor. Ubicado en una zona estratégica, a una cuadra de la Antigua Panamericana Sur, muy cerca de colegios de alto nivel (Saco Oliveros y San Marcos del Sur), de bancos (bcp, bbva, Interbank, Scotiabank), del Policlínico Villa Salud de Lurín, a un minuto del Mercado Virgen de las Mercedes, cerca del mercado Bambú y a 3 minutos de Plaza Vea, Cineplanet y Promart. Área total: 54 m2. Departamento con vista interna y muy ventilado. - Habitación principal con closet y baño incluido. - Habitación secundaria. - Cocina cerrada. - Lavandería. - Sala amplia. - Comedor. - Baño completo. - Intercomunicador. - Ascensor. - Escaleras de emergencia. - Se acepta mascota. Mantenimiento S/ 150 incluye agua. Las habitaciones, cocina y sala cuentan con amplias ventanas.",
       "risk_score": 0,
       "opportunity_score": 53.6,
@@ -965,7 +965,7 @@
       "has_parking": false
     },
     {
-      "id": "4086291d203400",
+      "id": "f0dac7c8f97031",
       "source": "Urbania",
       "property_type": "Casa",
       "district": "Chorrillos",
@@ -973,7 +973,7 @@
       "price_usd": 45000,
       "area_m2": 40.0,
       "price_per_m2": 1125.0,
-      "url": "https://urbania.pe/inmueble/clasificado/veclcapa-venta-de-casa-en-san-juan-bautista-de-villa-chorrillos-2-dormitorios-151098168?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=2",
+      "url": "https://urbania.pe/inmueble/clasificado/veclcapa-venta-de-casa-en-san-juan-bautista-de-villa-chorrillos-2-dormitorios-151098168?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=2",
       "raw_text": "S/ 153,000 · USD 45,000 40 m² tot. 2 dorm. 3 baños Calle Tahuantinsuyo Mz.A - Lt.21 San Juan Bautista De Villa, Chorrillos Venta Casa en Chorrillos S/ 153, 000 - $ 45, 000. Casa - Chorrillos. Casa de 40 m2 de terreno y area construida 120 m2; en San Juan Bautista de Villa; Chorrillos. Ubicada en la calle Tahuantinsuyo mz A Lote 21 San Juan Bautista de Villa, Chorrillos. Esta acogedora vivienda de tres niveles ofrece una distribución funcional y espacios ideales para la vida familiar. En el primer piso, la propiedad cuenta con una comoda sala-comedor de ambiente integrado, una cocina con buena distribución y un baño de visitas. El segundo piso se encuentran dos habitaciones bien distribuidas ambas con baño completo que brinda comodidad para toda la familia. Además una salita de star. En el tercer piso, la casa dispone de zona de lavandería con patio, ideal para labores del hogar y para aprovechar la ventilacion natural. También cuenta con un baño completo, con opción para construir una habitación. Construcción antisismica. Cuenta con servicio luz, agua y gas calida. La ubicación de este inmueble ofrece acceso rápido y seguro debido a que cuenta con vigilancia permanente. No cuenta c",
       "risk_score": 0,
       "opportunity_score": 53.0,
@@ -983,7 +983,7 @@
       "has_parking": false
     },
     {
-      "id": "6dfd62c518af6c",
+      "id": "4445d6e49d0f32",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Villa El Salvador",
@@ -991,7 +991,7 @@
       "price_usd": 48000,
       "area_m2": 108.0,
       "price_per_m2": 444.44,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-se-vende-departamento-tercer-piso-cuarto-piso-150758517.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=18",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-se-vende-departamento-tercer-piso-cuarto-piso-150758517.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=25",
       "raw_text": "S/ 163,000 · USD 48,000 108 m² tot. 3 dorm. 1 baño Av. Las Lomas Villa el Salvador, Lima S/ 163,000 · USD 48,000 El departamento tercer piso mas aires independizado. el departamento esta en el tercer piso area: 97. 35M2. la azotea (cuarto nivel) entrada independiente area 97. 35M2. inscrito en sunarp. tiene para construir A futuro un cuarto piso. techo de calamina. cocina amplia abierta. tres cuartos amplios. dos baños completos. sala Y comedor. vista A la calle. area: 108M2. precio tasacion bancaria: us$ 48, 000. 00. ubicacion: altura de la av. Las lomas - mercado primero de mayo - villa salvador. contacto: 9. 9. 4. 1. 8. 4. 2. 9. 8 - Ver datos elyan guevara. miguel iberico",
       "risk_score": 0,
       "opportunity_score": 53.0,
@@ -1019,7 +1019,7 @@
       "has_parking": false
     },
     {
-      "id": "fc3d17c876aced",
+      "id": "f4ac1270007480",
       "source": "Adondevivir",
       "property_type": "Casa",
       "district": "Villa El Salvador",
@@ -1027,7 +1027,7 @@
       "price_usd": 16900,
       "area_m2": 15.0,
       "price_per_m2": 1126.67,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclcain-tiny-house-en-venta-en-villa-el-salvador-146769507.html?n_src=Listado&n_pg=1&n_pos=21",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclcain-tiny-house-en-venta-en-villa-el-salvador-146769507.html?n_src=Listado&n_pg=1&n_pos=19",
       "raw_text": "S/ 62,530 · USD 16,900 S/ 1 Mantenimiento 15 m² tot. 2 dorm. 1 baño Av La Floresta, Villa El Salvador Villa el Salvador, Lima S/ 62,530 · USD 16,900 Vendo Hermosa Tiny House en Villa El Salvador, La Floresta 4. Venta: us$ 16, 900 dolares, Area de Terreno 15 m2, Ancho: 2. 5 metros, Largo: 6 metros, 1 planta, capacidad para hasta 6 personas, sala, comedor y cocina, 1 dormitorio con espacio para una cama doble o camarote y 1 sofá cama en la sala de estar, cuenta con un baño completo, podriamos agregarle una terraza para bbq. H&amp;amp;E",
       "risk_score": 0,
       "opportunity_score": 53.0,
@@ -1055,7 +1055,7 @@
       "has_parking": false
     },
     {
-      "id": "ed8a0675c675f0",
+      "id": "42245ac0c5a589",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Lurín",
@@ -1063,7 +1063,7 @@
       "price_usd": 44000,
       "area_m2": 40.0,
       "price_per_m2": 1100.0,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-condominio-villa-horizonte-las-praderas-de-lurin-149635212.html",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-condominio-villa-horizonte-las-praderas-de-lurin-149635212.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=17",
       "raw_text": "S/ 153,000 · USD 44,000 S/ 40 Mantenimiento 40 m² tot. 2 dorm. 1 baño Urb las Praderas de Lurin Las Praderas De Lurin, Lurín S/ 153,000 · USD 44,000 Condominio Villa Horizonte - Las Praderas de Lurín. Dpto 406 - Vista externa | 5 años de antigüedad. 42 m² bien distribuidos. ️ 2 dormitorios. 1 baño completo. Sala-Comedor + Cocina con lavandería. Mantenimiento: solo S/ 40. 00. Precio Venta s/. 150, 000. 00. Ideal para inversión o primera vivienda. Condominio con áreas verdes y seguridad. Agenda tu visita hoy.",
       "risk_score": 0,
       "opportunity_score": 53.0,
@@ -1091,7 +1091,7 @@
       "has_parking": false
     },
     {
-      "id": "dd07c3f1ca7e6a",
+      "id": "91c99c71287b81",
       "source": "Urbania",
       "property_type": "Terreno",
       "district": "Lurín",
@@ -1099,7 +1099,7 @@
       "price_usd": 36500,
       "area_m2": 120.0,
       "price_per_m2": 304.17,
-      "url": "https://urbania.pe/inmueble/clasificado/vecltepa-venta-de-terreno-en-las-praderas-de-lurin-lurin-151131272?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=4",
+      "url": "https://urbania.pe/inmueble/clasificado/vecltepa-venta-de-terreno-en-las-praderas-de-lurin-lurin-151131272?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=4",
       "raw_text": "S/ 124,100 · USD 36,500 5% 120 m² tot. Praderas de Lurin Las Praderas De Lurin, Lurín Terreno plano de 120 m2, con frente de 6 m y fondo de 20 m, ubicado en Urb. Praderas de Lurín, ubicada a la altura del kilómetro 36 de la antigua panamericana sur. Se encuentra cerca de Macrópolis y cuenta con acceso rápido hacia playas como Pulpos y Arica. Cuenta con parámetros urbanísticos para construcción de hasta 5 pisos + azotea Y documentación inscrita en sunarp. Cuenta con todos los servicios: Agua y desagüe. Energía eléctrica (con cableado subterráneo) Gas Natural domiciliario. Pistas, veredas, parques, pórtico. documentos en regla: ️ Partida registral independiente. ️ Título de propiedad inscrito en sunarp. ️ pu y hr registrados en Municipalidad. ️ Transferencia inmediata. ️ Sin cargas ni gravámenes. accesos. Av. Mártir Olaya. Av. Eucaliptos. precio: $ 38. 500 negociable. Trato directo con propietario. Escríbeme por WhatsApp al Ver datos para brindarte información del terreno y coordinar visita si lo deseas.",
       "risk_score": 0,
       "opportunity_score": 53.0,
@@ -1145,24 +1145,6 @@
       "has_parking": false
     },
     {
-      "id": "77498f3a72b305",
-      "source": "Urbania",
-      "property_type": "Departamento",
-      "district": "San Juan de Miraflores",
-      "title": "89 ha tot. 3 dorm.",
-      "price_usd": 58000,
-      "area_m2": 89.0,
-      "price_per_m2": 651.69,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-umamarca-san-juan-de-miraflores-3-dormitorios-147694622?n_src=Listado&n_pg=1&n_pos=11",
-      "raw_text": "S/ 210,000 · USD 58,000 89 ha tot. 3 dorm. los Jasminez - Umamarca Umamarca, San Juan de Miraflores Venta departamento piso 4 - con 3 dormitorios san juan de miraflores totalmente remodelado!! Ubicación: ? Calle Los Jazmines - Umamarca - San Juan de Miraflores? Zona segura con rejas? A una cuadra de colegios y parques distribución: ? 3 Dormitorios? 3 Baños? Área 89 m2? Sala comedor con vista eterna? Cocina cerrada? Habitación principal c/ baño incorporado? Tendal en Azotea? Tiene Gas Calidda A un paso de todo: ? Altura del Puente Umamarca? A 3 cuadras de Panamericana Sur? A media cuadra del Parque de Umamarca precio Y condiciones: ? Precio Departamento (89 m2) us$ 58, 000 Dólares documentacion: ? Departamento Independizado, inscrito en Registros Públicos, sin Cargas ni Hipotecas? No se paga Mantenimiento. Listo para la transferencia!! Recibimos ofertas!!",
-      "risk_score": 0,
-      "opportunity_score": 51.2,
-      "discount_vs_median_pct": 2.8,
-      "parking_status": "unknown",
-      "parking_spaces": null,
-      "has_parking": false
-    },
-    {
       "id": "88ffef0424e0a1",
       "source": "Urbania",
       "property_type": "Departamento",
@@ -1199,6 +1181,24 @@
       "has_parking": false
     },
     {
+      "id": "988b0d3a7e2333",
+      "source": "Urbania",
+      "property_type": "Departamento",
+      "district": "San Juan de Miraflores",
+      "title": "89 ha tot. 3 dorm.",
+      "price_usd": 58000,
+      "area_m2": 89.0,
+      "price_per_m2": 651.69,
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-umamarca-san-juan-de-miraflores-3-dormitorios-147694622?n_src=Listado&n_pg=1&n_pos=13",
+      "raw_text": "S/ 210,000 · USD 58,000 89 ha tot. 3 dorm. los Jasminez - Umamarca Umamarca, San Juan de Miraflores Venta departamento piso 4 - con 3 dormitorios san juan de miraflores totalmente remodelado!! Ubicación: ? Calle Los Jazmines - Umamarca - San Juan de Miraflores? Zona segura con rejas? A una cuadra de colegios y parques distribución: ? 3 Dormitorios? 3 Baños? Área 89 m2? Sala comedor con vista eterna? Cocina cerrada? Habitación principal c/ baño incorporado? Tendal en Azotea? Tiene Gas Calidda A un paso de todo: ? Altura del Puente Umamarca? A 3 cuadras de Panamericana Sur? A media cuadra del Parque de Umamarca precio Y condiciones: ? Precio Departamento (89 m2) us$ 58, 000 Dólares documentacion: ? Departamento Independizado, inscrito en Registros Públicos, sin Cargas ni Hipotecas? No se paga Mantenimiento. Listo para la transferencia!! Recibimos ofertas!!",
+      "risk_score": 0,
+      "opportunity_score": 50.8,
+      "discount_vs_median_pct": 2.2,
+      "parking_status": "unknown",
+      "parking_spaces": null,
+      "has_parking": false
+    },
+    {
       "id": "e5f63b6b9ab55d",
       "source": "Urbania",
       "property_type": "Terreno",
@@ -1212,24 +1212,6 @@
       "risk_score": 0,
       "opportunity_score": 49.5,
       "discount_vs_median_pct": -10.6,
-      "parking_status": "unknown",
-      "parking_spaces": null,
-      "has_parking": false
-    },
-    {
-      "id": "15fbdc7636988e",
-      "source": "Urbania",
-      "property_type": "Departamento",
-      "district": "San Juan de Miraflores",
-      "title": "87 ha tot. 3 dorm. 2 baños",
-      "price_usd": 58000,
-      "area_m2": 87.0,
-      "price_per_m2": 666.67,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-umamarca-san-juan-de-miraflores-3-dormitorios-147694868?n_src=Listado&n_pg=1&n_pos=12",
-      "raw_text": "S/ 210,000 · USD 58,000 87 ha tot. 3 dorm. 2 baños los Jazmines - Umamarca Umamarca, San Juan de Miraflores Venta departamento piso 4 - con 3 dormitorios san juan de miraflores totalmente remodelado!! Ubicación: ? Calle Los Jazmines - Umamarca - San Juan de Miraflores? Zona segura con rejas? A una cuadra de colegios y parques distribución: ? 3 Dormitorios? 2 Baños? Área 87 m2? Sala comedor con vista eterna? Cocina cerrada? Habitación principal c/ baño incorporado? Tendal en Azotea? Tiene Gas Calidda A un paso de todo: ? Altura del Puente Umamarca? A 3 cuadras de Panamericana Sur? A media cuadra del Parque de Umamarca precio Y condiciones: ? Precio Departamento (87 m2) us$ 58, 000 Dólares documentacion: ? Departamento Independizado, inscrito en Registros Públicos, sin Cargas ni Hipotecas? No se paga Mantenimiento. Listo para la transferencia!! Recibimos ofertas!!",
-      "risk_score": 0,
-      "opportunity_score": 49.4,
-      "discount_vs_median_pct": 0.6,
       "parking_status": "unknown",
       "parking_spaces": null,
       "has_parking": false
@@ -1271,7 +1253,7 @@
       "has_parking": false
     },
     {
-      "id": "26ed3cd195d47b",
+      "id": "18e95dafa4d6c7",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Breña",
@@ -1279,7 +1261,7 @@
       "price_usd": 48000,
       "area_m2": 42.0,
       "price_per_m2": 1142.86,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-minidepartamento-de-42-m-sup2--en-2do-piso-excelente-151327059.html?n_src=Listado&n_pg=1&n_pos=28",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-minidepartamento-de-42-m-sup2--en-2do-piso-excelente-151327059.html?n_src=Listado&n_pg=1&n_pos=19",
       "raw_text": "S/ 160,000 · USD 48,000 S/ 100 Mantenimiento 42 m² tot. 1 dorm. 1 baño Jangas al 500 Breña, Lima S/ 160,000 · USD 48,000 Minidepartamento de 42 M² en breña – excelente ubicaciónacogedor minidepartamento ubicado en el segundo piso de un edificio residencial de tan solo 5 departamentos, ideal para quienes buscan comodidad, privacidad y tranquilidad. Características del inmueble: -Área: 42 m². -Ubicado en 2do piso. -Edificio de solo 5 departamentos. -Sala-comedor. -Cocina americana integrada. -1 dormitorio con clóset. -1 baño completo con ducha. -no se aceptan mascotasubicación y entorno: -A 2 cuadras de la Av. Venezuela. -A 2 cuadras de la Av. Tingo María. -Cerca de la Universidad Privada del Norte (upn). -Próximo a bancos y entidades financieras. -Cercano a mercados, tiendas y establecimientos comerciales. -Fácil acceso al transporte público y principales avenidas. Ideal para personas solas o parejas que buscan un departamento funcional, bien ubicado y con todos los servicios a su alcance. ¡Agenda tu visita y conoce tu próximo hogar! Contáctanos para recibir mayor información y coordinar una visita al inmueble.",
       "risk_score": 0,
       "opportunity_score": 49.1,
@@ -1307,7 +1289,7 @@
       "has_parking": false
     },
     {
-      "id": "0fa27ea946685d",
+      "id": "cd8ecc85a3dc36",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Lince",
@@ -1315,7 +1297,7 @@
       "price_usd": 58326,
       "area_m2": 55.0,
       "price_per_m2": 1060.47,
-      "url": "https://www.adondevivir.com/propiedades/proyecto/ememvein-mural-lince-149313095.html?n_src=Listado&n_pg=1&n_pos=3",
+      "url": "https://www.adondevivir.com/propiedades/proyecto/ememvein-mural-lince-149313095.html?n_src=Listado&n_pg=1&n_pos=4",
       "raw_text": "Departamentos desde S/ 201,223 116 un. 1 a 2 dorm. 21 a 55 m² tot. Av. Arequipa 1936 Lince, Lima S/ 201,223 Gimnasio Piscina Área de juegos Parrilla Áreas verdes Está diseñado como una alternativa de inversión atractiva y segura en el distrito de Lince. Aquí cada detalle ha sido pensado para ofrecerte un inmueble sofisticado y funcional.",
       "risk_score": 0,
       "opportunity_score": 49.0,
@@ -1343,7 +1325,25 @@
       "has_parking": false
     },
     {
-      "id": "8ffd5bad18d988",
+      "id": "15fbdc7636988e",
+      "source": "Urbania",
+      "property_type": "Departamento",
+      "district": "San Juan de Miraflores",
+      "title": "87 ha tot. 3 dorm. 2 baños",
+      "price_usd": 58000,
+      "area_m2": 87.0,
+      "price_per_m2": 666.67,
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-umamarca-san-juan-de-miraflores-3-dormitorios-147694868?n_src=Listado&n_pg=1&n_pos=12",
+      "raw_text": "S/ 210,000 · USD 58,000 87 ha tot. 3 dorm. 2 baños los Jazmines - Umamarca Umamarca, San Juan de Miraflores Venta departamento piso 4 - con 3 dormitorios san juan de miraflores totalmente remodelado!! Ubicación: ? Calle Los Jazmines - Umamarca - San Juan de Miraflores? Zona segura con rejas? A una cuadra de colegios y parques distribución: ? 3 Dormitorios? 2 Baños? Área 87 m2? Sala comedor con vista eterna? Cocina cerrada? Habitación principal c/ baño incorporado? Tendal en Azotea? Tiene Gas Calidda A un paso de todo: ? Altura del Puente Umamarca? A 3 cuadras de Panamericana Sur? A media cuadra del Parque de Umamarca precio Y condiciones: ? Precio Departamento (87 m2) us$ 58, 000 Dólares documentacion: ? Departamento Independizado, inscrito en Registros Públicos, sin Cargas ni Hipotecas? No se paga Mantenimiento. Listo para la transferencia!! Recibimos ofertas!!",
+      "risk_score": 0,
+      "opportunity_score": 49.0,
+      "discount_vs_median_pct": 0.0,
+      "parking_status": "unknown",
+      "parking_spaces": null,
+      "has_parking": false
+    },
+    {
+      "id": "b57f6c36ec8034",
       "source": "Adondevivir",
       "property_type": "Terreno",
       "district": "Villa El Salvador",
@@ -1351,7 +1351,7 @@
       "price_usd": 47000,
       "area_m2": 79.0,
       "price_per_m2": 594.94,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/vecltein-terreno-en-venta-villa-salvador-151316235.html?n_src=Listado&n_pg=1&n_pos=25",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/vecltein-terreno-en-venta-villa-salvador-151316235.html?n_src=Listado&n_pg=1&n_pos=29",
       "raw_text": "S/ 161,680 · USD 47,000 79 m² tot. Mz.qb - Lt.23, Villa EL Salvador 15831, Perú Villa el Salvador, Lima S/ 161,680 · USD 47,000 Terreno urbano en Villa El Salvador — Oportunidad de inversiónDirección: Mz. qb - Lt. 23, Villa el Salvador Ver datos, PerúÁrea de terreno: 79. 05 m²Área construida: 0. 00 m² (terreno libre, listo para desarrollar) Descripción: Ideal para quienes buscan construir su vivienda a medida o ejecutar un pequeño proyecto inmobiliario en una zona con buena conectividad. Parcela sobre avenida principal que facilita acceso y visibilidad, perfecta para casa familiar, dúplex o emprendimiento comercial de barrio. Beneficios: - Buena accesibilidad y transporte cercano. - Zona con oferta de comercios y servicios esenciales. - Terreno libre: máxima flexibilidad de diseño y aprovechamiento. - Oportunidad para inversión a mediano plazo o proyecto propio. ¿Buscas más detalles o quieres programar una visita? Te puedo asesorar con la valoración y opciones de desarrollo sin compromiso. Consultar con el Agente Inmobiliario encargado para mayor información Ver datos.",
       "risk_score": 0,
       "opportunity_score": 49.0,
@@ -1361,7 +1361,7 @@
       "has_parking": false
     },
     {
-      "id": "8e469315b65999",
+      "id": "af83ec18056064",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "San Juan de Miraflores",
@@ -1369,17 +1369,17 @@
       "price_usd": 60000,
       "area_m2": 89.0,
       "price_per_m2": 674.16,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-umamarca-san-juan-de-miraflores-3-dormitorios-147695057?n_src=Listado&n_pg=1&n_pos=13",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-umamarca-san-juan-de-miraflores-3-dormitorios-147695057?n_src=Listado&n_pg=1&n_pos=14",
       "raw_text": "S/ 216,000 · USD 60,000 89 ha tot. 3 dorm. 3 baños los Jazmines - Umamarca Umamarca, San Juan de Miraflores Venta departamento piso 3 - con 3 dormitorios san juan de miraflores totalmente remodelado!! Ubicación: ? Calle Los Jazmines - Umamarca - San Juan de Miraflores? Zona segura con rejas? A una cuadra de colegios y parques distribución: ? 3 Dormitorios? 3 Baños? Área 89 m2? Sala comedor con vista eterna? Cocina cerrada? Habitación principal c/ baño incorporado? Tendal en Azotea? Tiene Gas Calidda A un paso de todo: ? Altura del Puente Umamarca? A 3 cuadras de Panamericana Sur? A media cuadra del Parque de Umamarca precio Y condiciones: ? Precio Departamento (89 m2) us$ 60, 000 Dólares documentacion: ? Departamento Independizado, inscrito en Registros Públicos, sin Cargas ni Hipotecas? No se paga Mantenimiento. Listo para la transferencia!! Recibimos ofertas!!",
       "risk_score": 0,
-      "opportunity_score": 48.6,
-      "discount_vs_median_pct": -0.6,
+      "opportunity_score": 48.1,
+      "discount_vs_median_pct": -1.1,
       "parking_status": "unknown",
       "parking_spaces": null,
       "has_parking": false
     },
     {
-      "id": "c1cdb91285c7fe",
+      "id": "6487d0d58fcdf5",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "San Miguel",
@@ -1387,7 +1387,7 @@
       "price_usd": 55000,
       "area_m2": 37.0,
       "price_per_m2": 1486.49,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-miguel-lima-1-dormitorio-149428703?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=5",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-miguel-lima-1-dormitorio-149428703?n_src=Listado&n_pills=Piscina&n_pg=1&n_pos=5",
       "raw_text": "S/ 184,000 · USD 55,000 S/ 180 Mantenimiento 37 m² tot. 1 dorm. 1 baño Av. Costanera - Dpto Piso 10 con Vista al Mar San Miguel, Lima Departamento en venta - Costanera - flat con 1 dormitorio frente al mar e la perla- callao. Departamento en venta de 1 dormitorio de 37. 04 m2, en piso 10, con vista al mar. Cuenta con sala - comedor, cocina abierta, dormitorio amplio con baño y closet estilo walking closet. Cuenta con distintas áreas comunesGymLavanderíaPlayground - área de niñosPiscinabbqmantenimiento: 150 soles aprox.",
       "risk_score": 0,
       "opportunity_score": 47.0,
@@ -1451,7 +1451,7 @@
       "has_parking": false
     },
     {
-      "id": "a28b3ac5fc2383",
+      "id": "7cf885e532779f",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "San Juan de Miraflores",
@@ -1459,7 +1459,7 @@
       "price_usd": 55500,
       "area_m2": null,
       "price_per_m2": null,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-150694815?n_src=Listado&n_pg=1&n_pos=6",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-150694815?n_src=Listado&n_pg=1&n_pos=7",
       "raw_text": "Se vende departamento dos dormitorios un baño sala comedor cocina piso 4 zona b sjm con vista a parque a, $55 500 cerca a centros comerciales 9 años de antigüedad",
       "risk_score": 0,
       "opportunity_score": 45.0,
@@ -1469,7 +1469,7 @@
       "has_parking": false
     },
     {
-      "id": "7ca8d47a7d3de1",
+      "id": "8b059051833e6a",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "San Juan de Miraflores",
@@ -1477,17 +1477,17 @@
       "price_usd": 50000,
       "area_m2": 60.0,
       "price_per_m2": 833.33,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-148156403?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=5",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-148156403?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=6",
       "raw_text": "S/ 170,000 · USD 50,000 60 m² tot. 2 dorm. 1 baño Manuel Pasos San Juan de Miraflores al 100 San Juan de Miraflores, Lima Venta de departamento por ocasion en san juan de mirafloresexclusivo Departamento en Venta – San Juan de Miraflores60M2-sjmvive en un elegante departamento en una de las zonas más exclusivas de San Juan de Miraflores. Diseño moderno, acabados de primera y un entorno seguro que lo convierten en la mejor opción para ti y tu familia. Características principales: Sala–comedor amplia, con excelente iluminación natural. 2 Dormitorios confortables y bien distribuidos. Cocina cerrada. 1 Baños con acabado. Área de lavandería independiente en la azotea. Bondades de la zona: Ubicación privilegiada en zona residencial exclusiva. Fácil acceso a vías principales que conectan con toda Lima. Cercanía al moll del sur, centros comerciales, supermercados y servicios. Proximidad a colegios privados y reconocidos. Acceso rápido a clínicas y centros de salud. Zona tranquila con seguridad permanente. Este departamento es ideal para quienes buscan exclusividad, comodidad y valorización asegurada en una de las mejores zonas de San Juan de Miraflores. Documentos totalmente saneados que a",
       "risk_score": 0,
       "opportunity_score": 44.0,
-      "discount_vs_median_pct": -24.3,
+      "discount_vs_median_pct": -25.0,
       "parking_status": "unknown",
       "parking_spaces": null,
       "has_parking": false
     },
     {
-      "id": "2c5c2a92f57bba",
+      "id": "0dd9ab3d73ce0e",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "Santiago de Surco",
@@ -1495,7 +1495,7 @@
       "price_usd": 59825,
       "area_m2": 40.0,
       "price_per_m2": 1495.62,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-santiago-de-surco-lima-1-dormitorio-149925783?n_src=Listado&n_pills=Parrilla&n_pg=1&n_pos=3",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-santiago-de-surco-lima-1-dormitorio-149925783?n_src=Listado&n_pills=Gimnasio&n_pg=1&n_pos=3",
       "raw_text": "S/ 206,395 40 m² tot. 1 dorm. 1 baño 1 estac. Pasaje LOS Aquijes N° 1xx, Dpto. 404 AL 2104 Santiago de Surco, Lima Edificio en Surco, 106 departamentos en total. dpto X04Cuenta con sala-comedor, kitchenette, 1 dormitorio, 1 baño completo, lavandería, balcón. Áreas comunes: Lobby, sum, Terraza, Zona de parrillas, Zona de niños. cochera con costo adicionalagosto 2028",
       "risk_score": 0,
       "opportunity_score": 43.0,
@@ -1505,7 +1505,7 @@
       "has_parking": false
     },
     {
-      "id": "45ab7d25095114",
+      "id": "a3b203a97554c6",
       "source": "Urbania",
       "property_type": "Terreno",
       "district": "Lurín",
@@ -1513,7 +1513,7 @@
       "price_usd": 39420,
       "area_m2": 120.0,
       "price_per_m2": 328.5,
-      "url": "https://urbania.pe/inmueble/clasificado/vecltein-venta-de-terreno-en-las-praderas-de-lurin-lurin-151207510?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=6",
+      "url": "https://urbania.pe/inmueble/clasificado/vecltein-venta-de-terreno-en-las-praderas-de-lurin-lurin-151207510?n_src=Listado&n_pills=Guardian%C3%ADa%2FSeguridad+privada&n_pg=1&n_pos=6",
       "raw_text": "S/ 136,000 · USD 40,000 120 m² tot. Calle 10 Las Praderas De Lurin, Lurín *R. U. C: 2. 0. 6. 0. 0. 1. 6. 2. 9. 9. 4* Razón Social: Constructora e Inmobiliaria Casa 21 S. A. C. Excelente oportunidad de inversión en Lurín, terreno ubicado en una zona residencial con creciente desarrollo urbano, a pocos metros del Complejo Industrial Macrópolis. Se encuentra a solo una cuadra de la Av. Mártir Olaya, una de las principales vías de la zona, y aproximadamente a 5 minutos de la Panamericana Sur, brindando una ubicación estratégica y de fácil acceso. La urbanización viene consolidándose rápidamente con la construcción de nuevas viviendas, lo que refleja el crecimiento de la zona y la convierte en una atractiva alternativa para quienes buscan invertir con proyección de valorización o construir su futura propiedad. *Contáctate con Neyber Vargas 9. 8. 7. 6. 0. 1. 2. 4. 3* - Área de 120m2. Precio: us$ 40, 000. 00. ¡Todo lo que necesitas para vivir de la mejor manera! No pierdas la oportunidad. Contáctanos ahora para más información y agendar una visita. *Contáctate con Neyber Vargas 9. 8. 7. 6. 0. 1. 2. 4. 3*",
       "risk_score": 0,
       "opportunity_score": 43.0,
@@ -1523,7 +1523,7 @@
       "has_parking": false
     },
     {
-      "id": "023b4ef533c200",
+      "id": "303d96afc53257",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Chorrillos",
@@ -1531,7 +1531,7 @@
       "price_usd": 59420,
       "area_m2": 74.0,
       "price_per_m2": 802.97,
-      "url": "https://www.adondevivir.com/propiedades/proyecto/ememvein-liv-360-148228970.html?n_src=Listado&n_pg=1&n_pos=4",
+      "url": "https://www.adondevivir.com/propiedades/proyecto/ememvein-liv-360-148228970.html?n_src=Listado&n_pg=1&n_pos=7",
       "raw_text": "Departamentos desde S/ 205,000 181 un. 1 a 3 dorm. 25 a 74 m² tot. Av. Chorrillos 360 Chorrillos, Lima S/ 205,000 Gimnasio Piscina Parrilla Tu depa en Chorrillos, a un paso de Barranco. Conoce Liv 360, un moderno proyecto ubicado en Chorrillos, estratégicamente a un paso de Barranco, ideal para quienes buscan un estilo de vida dinámico, conectado y con alta proyección de valorización. Vive cerca del malecón y disfruta de un entorno que combina tranquilidad rodeado de restaurantes, cafés y espacios culturales. El edificio, de 21 pisos, ha sido diseñado con espacios modernos y funcionales, complementados con áreas comunes pensadas para tu día a día: estacionamiento para bicicletas, gimnasio, lobby, zona de parrillas, pet spa, piscina y sala bar. Una excelente oportunidad para vivir o invertir en una de las zonas con mayor crecimiento de Lima. Liv 360 es ubicación, estilo de vida y oportunidad en un solo lugar.",
       "risk_score": 0,
       "opportunity_score": 42.9,
@@ -1559,7 +1559,7 @@
       "has_parking": false
     },
     {
-      "id": "5afed058815d36",
+      "id": "b585bfca7e2883",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Villa El Salvador",
@@ -1567,7 +1567,7 @@
       "price_usd": 39000,
       "area_m2": 54.0,
       "price_per_m2": 722.22,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-villa-el-salvador-venta-departamentos-seminuevos-147621401.html?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=16",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-villa-el-salvador-venta-departamentos-seminuevos-147621401.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=19",
       "raw_text": "S/ 133,000 · USD 39,000 54 m² tot. 2 dorm. 1 baño Prol. Mariano Pastor Sevilla Oasis De Villa, Villa el Salvador S/ 133,000 · USD 39,000 * venta departamentos seminuevos* -- área 54 m2 -- -- precio us$ 39, 000 -- ** ubicación ** - Av. Prolongación Mariano Pastor Sevilla - Villa El Salvador. - Urb. Oasis de Villa. - A 2 cuadras de la Av. 200 Millas. - A 3 cuadras del Hospital de Emergencias. ** características ** - 2 Dormitorios. - 1 Baño completo. - Pisos disponibles 4 y 5. - Vista interior. - Edificio sin ascensor. - Escaleras descansables. - Tiene título de propiedad. - Antigüedad 4 años. - Agua, luz y gas cálidda. - Edificio de 5 pisos con 7 departamentos. - Documentos en regla. - Establecimientos comerciales cerca. - Parque zonal cerca. - Colegios cerca. - Mercado cerca",
       "risk_score": 0,
       "opportunity_score": 42.0,
@@ -1577,7 +1577,7 @@
       "has_parking": false
     },
     {
-      "id": "f5b89d357968fb",
+      "id": "fb43d8f2cb6fa6",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "Lima Cercado",
@@ -1585,7 +1585,7 @@
       "price_usd": 52285,
       "area_m2": 27.0,
       "price_per_m2": 1936.48,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-santa-beatriz-lima-cercado-1-dormitorio-142929388?n_src=Listado&n_pills=Gimnasio&n_pg=1&n_pos=10",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-santa-beatriz-lima-cercado-1-dormitorio-142929388?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=10",
       "raw_text": "S/ 193,453 · USD 52,285 27 m² tot. 1 dorm. 1 baño 1 estac. avenida arequipa Santa Beatriz, Lima Cercado (cod. lrpy1001) Fecha de Entrega: 31 de Marzo del 2027. Lindo departamento estará ubicado en la Avenida Arequipa, Santa Beatriz, entre la Calle Manuel del Pino y Jirón Manuel Asensio Segura, cerca a colegios, restaurantes, zonas comerciales. El moderno edificio contará con 30 pisos, 303 departamentos de 1, 2 y 3 dormitorios, acceso a atractivas áreas comunes como: Lobby, zona de parrillas, gimnasio, sum, sala de niños, pet spa, social room, terraza, coworking, plaza. Contáctanos para brindarte la lista actualizada de los departamentos vigentes. Precio de estacionamiento es aparte.",
       "risk_score": 0,
       "opportunity_score": 42.0,
@@ -1595,7 +1595,7 @@
       "has_parking": true
     },
     {
-      "id": "35dfa0d9f68dac",
+      "id": "f4faa185182c8b",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "La Victoria",
@@ -1603,7 +1603,7 @@
       "price_usd": 52678,
       "area_m2": 25.0,
       "price_per_m2": 2107.12,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-la-victoria-lima-1-dormitorio-144881475?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=6",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-la-victoria-lima-1-dormitorio-144881475?n_src=Listado&n_pills=Piscina&n_pg=1&n_pos=6",
       "raw_text": "S/ 194,908 · USD 52,678 25 m² tot. 1 dorm. 1 baño 1 estac. J. Prado este con Av. N. Arriola La Victoria, Lima (Cod. Lrpr3401) Fecha de entrega: 30 Junio 2028. Elegante edificio que estará ubicado en J. Prado este con Av. N. Arriola. Por la zona encontrarás centros educativos, tiendas y markets, restaurantes, bancos, etc. El edifico contará con 7 sótanos, 37 pisos, rooftop, departamentos lofts y flats de 1, 2 y 3 ambientes desde 24m² hasta 77m² y áreas comunes: Lobby, sala bar, sala gourmet, coworking, terraza bbq, gimnasio, sum terraza, bike zone, pet spa, salón de niños, patio inferior. Contáctanos para brindarte la lista actualizada de los departamentos vigentes. Precios de estacionamientos es aparte.",
       "risk_score": 0,
       "opportunity_score": 42.0,
@@ -1613,7 +1613,7 @@
       "has_parking": true
     },
     {
-      "id": "031514452d3d5d",
+      "id": "18f8cd12bcaa7d",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "San Juan de Miraflores",
@@ -1621,11 +1621,11 @@
       "price_usd": 60000,
       "area_m2": 60.0,
       "price_per_m2": 1000.0,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-148805208?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=8",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-148805208?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=9",
       "raw_text": "S/ 204,000 · USD 60,000 60 m² tot. 2 dorm. 2 baños 1 estac. Calle Honorio Delgado al 100 San Juan de Miraflores, Lima Se vende departamento 4 piso, 60 M2 al costado del mall del sur. en un edificio de 5 pisos distribuidos 2 departamentos por piso, se vende cochera muy aparte A $10. 00 (diez mil dolares) al costado del mall sur de 60 M2 muy espaciosos Y funcionales, independizados..! es un edificio de 5 pisos, cada piso con 2 departamentos con escaleras super descansadas Y amplias para la comodidad de subir tus cosas sin ningun problema, agenda tu visita deja de pagar alquiler que eso es una perdida de dinero. se puede financiar con bancos propiedad al dia sin ningun problema legalsuper centrico san juan de miraflores (sector A) cerca de las av. Principales panamericana sur-pedro miotta – los alamos – flora tristan. condominio cerrado Y super seguro con seguridad las 24 horas. caracteristicas: - sala/comedor- cocina americana con armarios empotrados- 2 cuartos- 2 baños lavanderia con espacio para tendalen el mismo edificio hay 3 departamentostotalmente disponible con documentos independizados listos en regla para cualquier bancosuper funcional Y para familias que estan empezando A c",
       "risk_score": 0,
       "opportunity_score": 42.0,
-      "discount_vs_median_pct": -49.2,
+      "discount_vs_median_pct": -50.0,
       "parking_status": "included",
       "parking_spaces": 1,
       "has_parking": true
@@ -1685,7 +1685,7 @@
       "has_parking": false
     },
     {
-      "id": "bfe6bf4dbe4675",
+      "id": "344ce72aca4ea0",
       "source": "Urbania",
       "property_type": "Terreno",
       "district": "Lurín",
@@ -1693,7 +1693,7 @@
       "price_usd": 55000,
       "area_m2": 225.0,
       "price_per_m2": 244.44,
-      "url": "https://urbania.pe/inmueble/clasificado/vecltein-venta-de-terreno-en-san-pedro-lurin-144499078?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=12",
+      "url": "https://urbania.pe/inmueble/clasificado/vecltein-venta-de-terreno-en-san-pedro-lurin-144499078?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=12",
       "raw_text": "S/ 205,000 · USD 55,000 S/ 350 Mantenimiento 225 m² tot. islas de san pedro San Pedro, Lurín Venta terreno San Pedro. Condominio Residencial Islas de San Pedro / Venta de Ocasión Terrenos. -Garantice la seguridad y tranquilidad de su familia, viviendo al. estilo americano. -El Condominio San Pedro que le Ofrece: -Seguridad las 24/7. -Ubicado a 30 minutos de Lima y a solo 10 minutos de las playas del sur chico. -Frente a la playa de San Pedro. -Al costado del Centro Comercial InOutlet. -Con fácil acceso a la Panamericana Sur y también al Peaje destino a Lima. -Cuenta con asiento registral de acciones y derechos. Pu y hr, (En proceso de independización). -Adicional brindamos servicio completo para el proyecto y construcción. de su vivienda. Descripcion. at 225m2. Mantenimiento. S/. 350. 00 (Terreno). Precio Venta. us $55, 000. 00. *Las medidas del anuncio son referenciales*",
       "risk_score": 30,
       "opportunity_score": 38.5,
@@ -1721,7 +1721,7 @@
       "has_parking": false
     },
     {
-      "id": "82ebff34537324",
+      "id": "0c286bf32b7939",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "San Juan de Miraflores",
@@ -1729,17 +1729,17 @@
       "price_usd": 41000,
       "area_m2": 47.0,
       "price_per_m2": 872.34,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-150198832?n_src=Listado&n_pg=1&n_pos=4",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-150198832?n_src=Listado&n_pg=1&n_pos=5",
       "raw_text": "S/ 139,400 · USD 41,000 47 m² tot. 2 dorm. 1 baño las Dalias San Juan de Miraflores, Lima Contacto anndre casas *940*359*416*¡Una excelente oportunidad para adquirir tu vivienda propia o realizar una inversión rentable! Se vende acogedor departamento de 47 m² ubicado en una zona estratégica de San Juan de Miraflores, a solo 3 cuadras del Óvalo Cocharcas, una ubicación que te permitirá acceder fácilmente a transporte público, comercios, colegios, mercados y diversos servicios para tu día a día. Gracias a su distribución funcional, cada ambiente ha sido diseñado para aprovechar al máximo el espacio, brindando comodidad y bienestar para toda la familia. Distribución: Sala con buena iluminación natural. Cocina americana integrada, práctica y funcional. 2 dormitorios con clósets incorporados. 1 baño completo compartido. Ambientes ventilados y con excelente distribución. Ubicación y entornoA solo 3 cuadras del Óvalo Cocharcas. Fácil acceso a las principales avenidas y transporte público. Cerca de colegios, parques, mercados y comercios. Conectividad rápida hacia distintos puntos de Lima. Zona residencial consolidada y de alta demanda. Información adicional: Área: 47 m². Ubicado en 4. º p",
       "risk_score": 0,
       "opportunity_score": 38.0,
-      "discount_vs_median_pct": -30.1,
+      "discount_vs_median_pct": -30.9,
       "parking_status": "unknown",
       "parking_spaces": null,
       "has_parking": false
     },
     {
-      "id": "2637d80283edb7",
+      "id": "4b99bdb7b5eee4",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Villa El Salvador",
@@ -1747,7 +1747,7 @@
       "price_usd": 47000,
       "area_m2": 52.0,
       "price_per_m2": 903.85,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-invierte-departamento-con-vista-exterior-de-2-148448134.html?n_src=Listado&n_pg=1&n_pos=1",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-invierte-departamento-con-vista-exterior-de-2-148448134.html?n_src=Listado&n_pg=1&n_pos=2",
       "raw_text": "S/ 157,920 · USD 47,000 52 m² tot. 2 dorm. 1 baño Q3cf+qc5, 200 Millas, Lima 15836, Perú Villa el Salvador, Lima S/ 157,920 · USD 47,000 Departamento en Venta con Vista Exterior – 52 m² en Villa El Salvador Funcional y bien ubicado departamento de 52 m², situado en 3er piso, ideal para vivienda o inversión. Cuenta con 2 cómodas habitaciones, 1 baño completo, sala–comedor bien iluminada y cocina de distribución práctica, pensada para el día a día. Ubicado en Av. 200 Millas, a pocos minutos del Hospital de Emergencias de Villa El Salvador, con fácil acceso a transporte público, comercios y servicios esenciales. Precio: usd 47, 000 Excelente oportunidad por ubicación y precioPerfecto para quienes buscan comodidad, conectividad y una inversión segura. R. U. C Ver datos",
       "risk_score": 0,
       "opportunity_score": 38.0,
@@ -1757,7 +1757,7 @@
       "has_parking": false
     },
     {
-      "id": "570b9c8a75fc20",
+      "id": "a672e64fbe3a9b",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Villa El Salvador",
@@ -1765,7 +1765,7 @@
       "price_usd": 48500,
       "area_m2": 74.0,
       "price_per_m2": 655.41,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-villa-el-salvador-venta-departamentos-seminuevos-147614137.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=15",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-villa-el-salvador-venta-departamentos-seminuevos-147614137.html?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=22",
       "raw_text": "S/ 165,000 · USD 48,500 74 m² tot. 3 dorm. 2 baños Prol. Mariano Pastor Sevilla Oasis De Villa, Villa el Salvador S/ 165,000 · USD 48,500 * venta departamentos seminuevos* -- área 74 m2 -- -- precio us$ 48, 500 -- ** ubicación ** - Av. Prolongación Mariano Pastor Sevilla - Villa El Salvador. - Urb. Oasis de Villa. - A 2 cuadras de la Av. 200 Millas. - A 3 cuadras del Hospital de Emergencias. ** características ** - 3 Dormitorios. - 2 Baños completos. - Pisos disponibles 3 y 4. - Vista exterior. - Edificio sin ascensor. - Escaleras descansables. - Tiene título de propiedad. - Antigüedad 4 años. - Agua, luz y gas cálidda. - Edificio de 5 pisos con 7 departamentos. - Documentos en regla. - Establecimientos comerciales cerca. - Parque zonal cerca. - Colegios cerca. - Mercado cerca",
       "risk_score": 0,
       "opportunity_score": 38.0,
@@ -1775,7 +1775,7 @@
       "has_parking": false
     },
     {
-      "id": "56567f913a400b",
+      "id": "2de677f19d0b0a",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Villa El Salvador",
@@ -1783,7 +1783,7 @@
       "price_usd": 50000,
       "area_m2": 57.0,
       "price_per_m2": 877.19,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-departamento-en-zona-estrategica-villa-el-salvador-150542323.html?n_src=Listado&n_pg=1&n_pos=7",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-departamento-en-zona-estrategica-villa-el-salvador-150542323.html?n_src=Listado&n_pg=1&n_pos=10",
       "raw_text": "S/ 167,500 · USD 50,000 57 m² tot. 2 dorm. 1 baño Mz. N Lote 12, Piso 3, Grupo Residencial 18, Sector Tercero, Villa El Salvador Villa el Salvador, Lima S/ 167,500 · USD 50,000 Departamento Flat en Villa El Salvador — Oportunidad lista para habitarDirección: Lote 12, Piso 3, Grupo Residencial 18, Sector Tercero, Villa El SalvadorCaracterísticas principales: - Piso: 3 (edificio de 3 pisos) - Área construida: 57. 59 m²- Habitaciones: 2- Baños: 1- Antigüedad: 8 años- Azotea compartidaPor qué te interesaEspacios bien distribuidos en 57. 59 m²: ideal para pareja, familia pequeña o inversión para renta. Departamento tipo flat en tercer piso, con buena privacidad y ubicación práctica en Villa El Salvador. Perfecto para quienes buscan un hogar funcional con rápida accesibilidad a comercios y transporte de la zona. Recomendado para: - Primer hogar- Inversión para alquiler- Personas que buscan ubicación práctica en ves¿Quieres verlo en persona? Solicita una visita y te muestro todo el potencial del departamento. Consultar con el Agente Inmobiliario encargado para mayor información Ver datos.",
       "risk_score": 0,
       "opportunity_score": 38.0,
@@ -1793,7 +1793,7 @@
       "has_parking": false
     },
     {
-      "id": "9d499b250ea5ff",
+      "id": "b1c090e1b85afe",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Villa El Salvador",
@@ -1801,47 +1801,11 @@
       "price_usd": 53000,
       "area_m2": 57.0,
       "price_per_m2": 929.82,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-departamento-en-estrategica-zona-de-villa-el-salvador-150517907.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=10",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin-departamento-en-estrategica-zona-de-villa-el-salvador-150517907.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=11",
       "raw_text": "S/ 177,500 · USD 53,000 57 m² tot. 2 dorm. 1 baño Mz. N Lote 12, Piso 2, Grupo Residencial 18, Sector Tercero, Villa El Salvador Villa el Salvador, Lima S/ 177,500 · USD 53,000 Departamento en villa el salvador — flatdirección: Grupo Residencial 18, Sector Tercero, Villa El SalvadorCaracterísticas principales: - Área construida: 57. 59 m²- Habitaciones: 2 - Baños: 1 - Antigüedad: 11 años - Zona de lavanderia- Sala comedorDescripción breve: Acogedor flat en el segundo nivele con distribución funcional que aprovecha muy bien sus 57. 59 m². Ideal para parejas, jóvenes profesionales o como inversión para alquiler. Con acceso a transporte y servicios cercanos. Puntos a destacar: - Espacios bien distribuidos, fácil adaptación de ambientaciones. - Excelente opción si buscas un hogar compacto- Ubicación residencial que aporta seguridad y tranquilidad. ¿Te interesa una visita o más detalles? Disponible para mostrar en visitas. Consultar con el Agente Inmobiliario encargado para mayor información Ver datos.",
       "risk_score": 0,
       "opportunity_score": 38.0,
       "discount_vs_median_pct": -109.2,
-      "parking_status": "unknown",
-      "parking_spaces": null,
-      "has_parking": false
-    },
-    {
-      "id": "bc8a2d2e0cebd3",
-      "source": "Urbania",
-      "property_type": "Departamento",
-      "district": "San Juan de Miraflores",
-      "title": "S/ 1 Mantenimiento",
-      "price_usd": 60000,
-      "area_m2": 78.0,
-      "price_per_m2": 769.23,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-3-dormitorios-150851113?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=9",
-      "raw_text": "S/ 201,900 · USD 60,000 S/ 1 Mantenimiento 78 m² tot. 3 dorm. 1 baño Calle Ignacio Seminario 466 San Juan de Miraflores, Lima ¡Excelente oportunidad para vivir o invertir en San Juan de Miraflores! Moderno departamento de 78 m², totalmente remodelado y con una distribución funcional que aprovecha muy bien cada espacio. Ubicado a pocos pasos del Parque San Juan y a solo 3 cuadras de las avenidas Canevaro y Pedro Miotta, en una zona residencial con fácil acceso a comercios, servicios, transporte y principales vías del distrito. Distribución. - 3 dormitorios amplios y ventilados. - 1 baño completo. - Área de lavandería. - Sala-comedor con excelente iluminación natural. - Cocina moderna con muebles altos y bajos. - Ambientes remodelados y listos para habitar. ¿Por qué elegir este departamento? ️ 78 m² bien distribuidos. ️ Totalmente remodelado. ️ 3 dormitorios. ️ Excelente iluminación y ventilación. ️ Ubicación estratégica. ️ Ideal para vivienda familiar. ️ Excelente alternativa de inversión para alquiler. Ubicación estratégica. Disfruta de la comodidad de tener todo cerca: Parque San Juan. Av. Canevaro. Av. Pedro Miotta. Parques y áreas verdes. Mercados y bodegas. Colegios. Centros de",
-      "risk_score": 0,
-      "opportunity_score": 37.2,
-      "discount_vs_median_pct": -14.7,
-      "parking_status": "unknown",
-      "parking_spaces": null,
-      "has_parking": false
-    },
-    {
-      "id": "16a2119d780c64",
-      "source": "Urbania",
-      "property_type": "Departamento",
-      "district": "San Juan de Miraflores",
-      "title": "78 m² tot. 3 dorm. 1 baño",
-      "price_usd": 60000,
-      "area_m2": 78.0,
-      "price_per_m2": 769.23,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-3-dormitorios-149483833?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=10",
-      "raw_text": "S/ 201,900 · USD 60,000 78 m² tot. 3 dorm. 1 baño Calle Ignacio Seminario 466 San Juan de Miraflores, Lima ¡Oportunidad que no puedes dejar pasar! Vive cómodo, seguro y en una zona estratégica de San Juan de Miraflores. Contacto: Melissa Vicente 9 7 0 0 4 5 2 7 3. A pasos del Parque San Juan. A solo 3 cuadras de Av. Canevaro y Av. Pedro Miotta. 78 m² bien distribuidos. Lo que te encantará: ️ 3 dormitorios amplios y ventilados. 1 baño completo + lavandería. ️ Sala y comedor con excelente iluminación. Cocina moderna con muebles altos y bajos. Departamento totalmente remodelado. Ubicación top: Cerca a parques. Mercados y bodegas. Colegios y centros de salud. ️ Centros comerciales y avenidas principales. todo en regla. ️ Un solo propietario. ️ Listo para transferencia inmediata. Perfecto para vivir o invertir. Contáctame ya: Melissa Vicente. Ver datos",
-      "risk_score": 0,
-      "opportunity_score": 37.2,
-      "discount_vs_median_pct": -14.7,
       "parking_status": "unknown",
       "parking_spaces": null,
       "has_parking": false
@@ -1865,6 +1829,42 @@
       "has_parking": false
     },
     {
+      "id": "16a2119d780c64",
+      "source": "Urbania",
+      "property_type": "Departamento",
+      "district": "San Juan de Miraflores",
+      "title": "78 m² tot. 3 dorm. 1 baño",
+      "price_usd": 60000,
+      "area_m2": 78.0,
+      "price_per_m2": 769.23,
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-3-dormitorios-149483833?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=10",
+      "raw_text": "S/ 201,900 · USD 60,000 78 m² tot. 3 dorm. 1 baño Calle Ignacio Seminario 466 San Juan de Miraflores, Lima ¡Oportunidad que no puedes dejar pasar! Vive cómodo, seguro y en una zona estratégica de San Juan de Miraflores. Contacto: Melissa Vicente 9 7 0 0 4 5 2 7 3. A pasos del Parque San Juan. A solo 3 cuadras de Av. Canevaro y Av. Pedro Miotta. 78 m² bien distribuidos. Lo que te encantará: ️ 3 dormitorios amplios y ventilados. 1 baño completo + lavandería. ️ Sala y comedor con excelente iluminación. Cocina moderna con muebles altos y bajos. Departamento totalmente remodelado. Ubicación top: Cerca a parques. Mercados y bodegas. Colegios y centros de salud. ️ Centros comerciales y avenidas principales. todo en regla. ️ Un solo propietario. ️ Listo para transferencia inmediata. Perfecto para vivir o invertir. Contáctame ya: Melissa Vicente. Ver datos",
+      "risk_score": 0,
+      "opportunity_score": 36.7,
+      "discount_vs_median_pct": -15.4,
+      "parking_status": "unknown",
+      "parking_spaces": null,
+      "has_parking": false
+    },
+    {
+      "id": "b217e11ac41d63",
+      "source": "Urbania",
+      "property_type": "Departamento",
+      "district": "San Juan de Miraflores",
+      "title": "S/ 1 Mantenimiento",
+      "price_usd": 60000,
+      "area_m2": 78.0,
+      "price_per_m2": 769.23,
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-3-dormitorios-150851113?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=11",
+      "raw_text": "S/ 201,900 · USD 60,000 S/ 1 Mantenimiento 78 m² tot. 3 dorm. 1 baño Calle Ignacio Seminario 466 San Juan de Miraflores, Lima ¡Excelente oportunidad para vivir o invertir en San Juan de Miraflores! Moderno departamento de 78 m², totalmente remodelado y con una distribución funcional que aprovecha muy bien cada espacio. Ubicado a pocos pasos del Parque San Juan y a solo 3 cuadras de las avenidas Canevaro y Pedro Miotta, en una zona residencial con fácil acceso a comercios, servicios, transporte y principales vías del distrito. Distribución. - 3 dormitorios amplios y ventilados. - 1 baño completo. - Área de lavandería. - Sala-comedor con excelente iluminación natural. - Cocina moderna con muebles altos y bajos. - Ambientes remodelados y listos para habitar. ¿Por qué elegir este departamento? ️ 78 m² bien distribuidos. ️ Totalmente remodelado. ️ 3 dormitorios. ️ Excelente iluminación y ventilación. ️ Ubicación estratégica. ️ Ideal para vivienda familiar. ️ Excelente alternativa de inversión para alquiler. Ubicación estratégica. Disfruta de la comodidad de tener todo cerca: Parque San Juan. Av. Canevaro. Av. Pedro Miotta. Parques y áreas verdes. Mercados y bodegas. Colegios. Centros de",
+      "risk_score": 0,
+      "opportunity_score": 36.7,
+      "discount_vs_median_pct": -15.4,
+      "parking_status": "unknown",
+      "parking_spaces": null,
+      "has_parking": false
+    },
+    {
       "id": "7b76c52b45ea86",
       "source": "Urbania",
       "property_type": "Departamento",
@@ -1883,7 +1883,7 @@
       "has_parking": false
     },
     {
-      "id": "c12e371a0a9149",
+      "id": "7154d11547c967",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "La Victoria",
@@ -1891,7 +1891,7 @@
       "price_usd": 46000,
       "area_m2": 43.0,
       "price_per_m2": 1069.77,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-la-victoria-lima-1-dormitorio-149990884?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=2",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-la-victoria-lima-1-dormitorio-149990884?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=2",
       "raw_text": "S/ 153,732 · USD 46,000 S/ 20 Mantenimiento 43 m² tot. 1 dorm. 1 baño Av. Parinacochas 908 La Victoria, Lima ¡precio de oportunidad en la victoria! ¡ahora us$46, 000! ¿Buscas tu primera vivienda o una propiedad para invertir en una zona estratégica de La Victoria? Esta puede ser tu oportunidad! ; Departamento de 43 m² | 1 dormitorio | 2. º piso. Av. Parinacochas – La Victoria, en una ubicación estratégica y con fácil acceso a Gamarra, Av. México, Av. Iquitos y principales vías. ¿qué encontrarás? ️ Sala-comedor. ️ 1 dormitorio. ️ Cocina. ️ 1 baño remodelado. ️ Lavandería. ️ Agua y luz independientes. ️ Vista interior. ️ Documentación en regla. ¿por qué elegir esta propiedad? - precio: us$46, 000. - ubicación: Cerca de Gamarra y zonas comerciales. - oportunidad: Ideal para vivir o como inversión. Departamento práctico y fácil de mantener. *Documentación en regla. un precio difícil de encontrar para una propiedad en esta ubicación! Si estás buscando una propiedad de precio accesible en La Victoria, vale la pena verla antes de tomar una decisión. Agenda tu visita. Ruc Ver datos",
       "risk_score": 0,
       "opportunity_score": 35.8,
@@ -1901,7 +1901,7 @@
       "has_parking": false
     },
     {
-      "id": "f03caaefd4b5ab",
+      "id": "9b42740809771b",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "San Miguel",
@@ -1909,7 +1909,7 @@
       "price_usd": 51810,
       "area_m2": 27.0,
       "price_per_m2": 1918.89,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-miguel-lima-1-dormitorio-150859583?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=3",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-miguel-lima-1-dormitorio-150859583?n_src=Listado&n_pills=Gimnasio&n_pg=1&n_pos=3",
       "raw_text": "S/ 178,739 · USD 51,810 27 m² tot. 1 dorm. 1 baño Avenida Costanera al 1600 San Miguel, Lima Departamento de 1 dormitorio tipo loft en venta, excelente ubicación a sólo 1 minuto del circuito de playas de San Miguel. Características: 1 Dormitorio principal con espacio para cama queen y armario grande empotradoEspacio para escritorio y una mesa o sala pequeñaCocina estilo americana equipada1 baño completo Zona para lavadoraAdicionales: Lobby con seguridad 24h Zona de niñosTerrazaCoworkingTerraza barPet zone2 piscinas panorámicasGimnasio12 zonas de parrillasSala gourmetSala de juegosSala sumzonas cercanas: A sólo 1 minuto del circuito de playasA 5 minutos del malecón BertolottoA 10 minutos de Plaza san miguelRodeado de parques y restaurantesExcelente zona para turismo. Banco: bbvaagenda tu visita hoy mismo y asegura tu mejor compra!",
       "risk_score": 0,
       "opportunity_score": 34.0,
@@ -1919,7 +1919,7 @@
       "has_parking": false
     },
     {
-      "id": "ee4ef49f5b5b99",
+      "id": "991df1c10ac11d",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Chorrillos",
@@ -1927,7 +1927,7 @@
       "price_usd": 60000,
       "area_m2": 65.0,
       "price_per_m2": 923.08,
-      "url": "https://www.adondevivir.com/propiedades/proyecto/ememhvin-las-praderas-142545127.html?n_src=Listado&n_pg=1&n_pos=3",
+      "url": "https://www.adondevivir.com/propiedades/proyecto/ememhvin-las-praderas-142545127.html?n_src=Listado&n_pg=1&n_pos=5",
       "raw_text": "Departamentos desde S/ 207,000 352 un. 1 a 3 dorm. 38 a 65 m² tot. Av. Los Faisanes 485, Chorrillos Chorrillos, Lima S/ 207,000 Gimnasio Área de juegos Parrilla El espacio ideal para vivir o invertir en Chorrillos. Descubre Las Praderas, un proyecto en construcción diseñado para quienes buscan calidad de vida en familia o una excelente oportunidad de inversión en una zona en crecimiento. Ubicado en Chorrillos, ofrece un entorno moderno y funcional, ideal tanto para familias que buscan comodidad y bienestar, como para quienes desean invertir en departamentos con alta demanda. El proyecto cuenta con completas áreas comunes pensadas para todos los estilos de vida: jacuzzi, lobby, Smart Café, sala de usos múltiples, gimnasio, zona para niños, zona de bbq, co-working, terraza, lounge y sky bar, perfectas para disfrutar, compartir y generar valor. Las Praderas combina hogar, inversión y calidad de vida en una sola decisión inteligente.",
       "risk_score": 0,
       "opportunity_score": 34.0,
@@ -1937,7 +1937,7 @@
       "has_parking": false
     },
     {
-      "id": "59fb00550692be",
+      "id": "94d99a27eaf9b6",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Chorrillos",
@@ -1945,7 +1945,7 @@
       "price_usd": 59188,
       "area_m2": 64.0,
       "price_per_m2": 924.81,
-      "url": "https://www.adondevivir.com/propiedades/proyecto/ememcein-link-146697336.html?n_src=Listado&n_pg=1&n_pos=5",
+      "url": "https://www.adondevivir.com/propiedades/proyecto/ememcein-link-146697336.html?n_src=Listado&n_pg=1&n_pos=6",
       "raw_text": "Departamentos desde S/ 204,200 317 un. 1 a 3 dorm. 32 a 64 m² tot. Av. Los Faisanes 365, Chorrillos La Campiña, Chorrillos S/ 204,200 ¡En Construcción! Link, para vivir en la ciudad sin sentir la ciudad. Un condominio para disfrutar la vida que siempre has querido en el lugar que siempre has soñado rodeado de más de 15 áreas comunes para sumar vivencias. Vive en la mejor ubicación de Chorrillos conectado a todo lo que necesitas en espacios completos y funcionales que se adaptan a tu ritmo de vida. Link, el mejor enlace entre la ciudad y tu depa propio.",
       "risk_score": 0,
       "opportunity_score": 34.0,
@@ -1955,7 +1955,7 @@
       "has_parking": false
     },
     {
-      "id": "39a185709b821b",
+      "id": "b5533b38cae999",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "San Miguel",
@@ -1963,7 +1963,7 @@
       "price_usd": 45433,
       "area_m2": 23.0,
       "price_per_m2": 1975.35,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-miramar-san-miguel-1-dormitorio-151122035?n_src=Listado&n_pills=Piscina&n_pg=1&n_pos=2",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-miramar-san-miguel-1-dormitorio-151122035?n_src=Listado&n_pills=Jard%C3%ADn&n_pg=1&n_pos=2",
       "raw_text": "S/ 157,198 · USD 45,433 23 m² tot. 1 dorm. 1 baño 1 estac. Avenida Costanera Miramar, San Miguel Entrega: diciembre 2028 | Financiamiento: bbva | tcvnt2/4/5/6/7/8/Ver datos/Ver datos. Departamento tipo loft de 23. 41 m² con 1 dormitorio y 1 baño en San Miguel. Su formato compacto integra los ambientes principales de manera práctica y se complementa con una amplia oferta de áreas comunes. El edificio cuenta con lobby, terraza, zona de niños, coworking, pet zone, terraza bar, 2 piscinas panorámicas, gimnasio, 12 zonas de parrillas, salón gourmet, sala de juegos y sala de usos múltiples. Además, se encuentra cerca de Plaza San Miguel, Open Plaza, upc San Miguel y el Malecón Bertolotto. Precio: S/ 157, 198 (precio en dólares referencial) Estacionamientos disponibles por un costo adicional. Contáctanos. @housebrokerperu. House Bróker Perú",
       "risk_score": 0,
       "opportunity_score": 32.0,
@@ -1991,7 +1991,7 @@
       "has_parking": false
     },
     {
-      "id": "1cffe7f8fad93c",
+      "id": "881a56cd5948e6",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "Lima Cercado",
@@ -1999,7 +1999,7 @@
       "price_usd": 59499,
       "area_m2": 26.0,
       "price_per_m2": 2288.42,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-santa-beatriz-lima-cercado-1-dormitorio-149368952?n_src=Listado&n_pills=Gimnasio&n_pg=1&n_pos=16",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-santa-beatriz-lima-cercado-1-dormitorio-149368952?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=16",
       "raw_text": "S/ 205,273 · USD 59,499 26 m² tot. 1 dorm. 1 baño Av Arequipa al 1400 Santa Beatriz, Lima Cercado Edificio exclusivamente diseñado como una alternativa de inversión atractiva y segura dentro del distrito de Santa Beatriz. Un edificio que combina diseño, bienestar y conexión. Una zona con alta proyección y constante revalorización. Cada detalle ha sido pensado para quienes valoran la calma, la seguridad y la belleza de los espacios bien hechos. detalle• 1 dormitorio (tipo loft) • Área: 26, 47m2• Piso: 4• Vista a patio interno/callecaracterísticas• Espacio amplio de dormitorio con clóset• Baño completo• Moderna cocina americana con muebles altos y bajos (cocina equipada) • Clóset de lavadoáreas comunes• Lobby• Sala para niños• Pet Spa • Zona de parrillas• Gimnasio • Sala de descanso al aire libre• Coworkingadicionales• Cocheras en S/. 49, 000• Fideicomisoaprovecha esta gran oportunidad Y agenda tu visita.",
       "risk_score": 0,
       "opportunity_score": 30.0,
@@ -2009,7 +2009,7 @@
       "has_parking": false
     },
     {
-      "id": "a69402922a9a50",
+      "id": "f1e92f4528a003",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "Lima Cercado",
@@ -2017,7 +2017,7 @@
       "price_usd": 59866,
       "area_m2": 34.0,
       "price_per_m2": 1760.76,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-santa-beatriz-lima-cercado-1-dormitorio-147792669?n_src=Listado&n_pills=Parrilla&n_pg=1&n_pos=17",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-santa-beatriz-lima-cercado-1-dormitorio-147792669?n_src=Listado&n_pills=Guardian%C3%ADa%2FSeguridad+privada&n_pg=1&n_pos=17",
       "raw_text": "S/ 206,536 34 m² tot. 1 dorm. 1 baño Av Alejandro Tirado N° 6xx, Dpto. 3008 Santa Beatriz, Lima Cercado Edificio Multifamiliar ubicado en una zona estratégica de la ciudad de Lima, con accesos a las vías principales interdistritales Av. Arequipa, Av. Arenales y Vía Expresa del Paseo de la República, a pocos pasos del parque de La Reserva, Circuito Mágico del Agua, muy cerca de colegios, universidades, hospitales, centros comerciales y a pocos minutos del centro histórico de Lima. Edificio de 30 pisos, 212 departamentos en total, 6 sótanosdpto 3008Hall, sala, comedor, cocina abierta con muebles altos y bajos, baño de visitas. Dormitorio con closet, 1 baño completo, lavanderia. Áreas comunes: Zona de Niños, Zona Pet, Área de Bicicletas, Gimnasio, sum, 2 Zonas de parrillasestacionamiento S/54, 190. mayo 2027",
       "risk_score": 0,
       "opportunity_score": 30.0,
@@ -2045,7 +2045,7 @@
       "has_parking": false
     },
     {
-      "id": "600821d569ae99",
+      "id": "16c64044700485",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "Chorrillos",
@@ -2053,7 +2053,7 @@
       "price_usd": 60000,
       "area_m2": 40.0,
       "price_per_m2": 1500.0,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-la-campina-chorrillos-1-dormitorio-150496389?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=9",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-la-campina-chorrillos-1-dormitorio-150496389?n_src=Listado&n_pills=Gimnasio&n_pg=1&n_pos=9",
       "raw_text": "S/ 203,940 · USD 60,000 S/ 100 Mantenimiento 40 m² tot. 1 dorm. 1 baño Los Sauces 155 La Campiña, Chorrillos Área: 40. 57 m² ️ Piso: 7. ️ Distribución: 1 dormitorio con baño completo incorporado (mayor privacidad) 1 baño de visita. Hall de ingreso. Espacios bien iluminados y funcionales. Características del departamento: Excelente distribución que optimiza cada metro cuadrado. Ideal para solteros, parejas o inversión. Piso alto: mayor tranquilidad y mejor vista. Características del edificio: ️ Guardianía permanente. Seguridad privada. Edificio tranquilo y bien mantenido. Ubicación – La Campiña: Zona residencial, segura y de ambiente familiar. Cercano a supermercados, farmacias y tiendas. Acceso a servicios de salud cercanos. Buena conectividad con transporte público. Ideal para: Primera vivienda. Independizarse. Inversión con potencial de renta. Beneficios clave: Excelente relación precio–ubicación. Zona en crecimiento. Listo para habitar o alquilar",
       "risk_score": 0,
       "opportunity_score": 30.0,
@@ -2099,7 +2099,7 @@
       "has_parking": false
     },
     {
-      "id": "43fa6fb969f24e",
+      "id": "245583c07e4966",
       "source": "Adondevivir",
       "property_type": "Departamento",
       "district": "Lurín",
@@ -2107,7 +2107,7 @@
       "price_usd": 57500,
       "area_m2": 40.0,
       "price_per_m2": 1437.5,
-      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin--departamento-amoblado-y-equipado-en-venta-150627479.html",
+      "url": "https://www.adondevivir.com/propiedades/clasificado/veclapin--departamento-amoblado-y-equipado-en-venta-150627479.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=20",
       "raw_text": "S/ 195,500 · USD 57,500 S/ 30 Mantenimiento 40 m² tot. 2 dorm. 1 baño Las Praderas de Lurin Sector 3 Las Praderas De Lurin, Lurín S/ 195,500 · USD 57,500 ¡departamento amoblado Y equipado en venta! Condominio Villa Horizonte - Las Praderas de Lurín. Dpto 201 - 2° Piso | Vista Externa | 5 años de antigüedad* *Características: * - *Área*: 40 m² muy bien distribuidos. - *Dormitorios*: 2. - *Baños*: 1 baño completo. - *Ambientes*: Sala-Comedor + Cocina + Lavandería. Acabados y Equipamiento: - Viene amoblado Y equipado. - Cocina. Mesón de granito + muebles en melamine + horno + encimera + campana. - Lavandería. Lavadora y secadora instaladas. - Pisos: Porcelanato en cocina y baño, mayólicas modernas. - Clósets. Melamine en dormitorios. - Puertas. : Madera/mdf. - Ventanas: Vidrio templado. - Extras. 2 puntos de gas, paredes empastadas y pintadas. Condominio: - Áreas verdes. - Seguridad. - Mantenimiento: S/ 30. 00. *Precio de Venta: $57, 500. 00* Ideal para inversión o primera vivienda. Cupos limitados para visitas este fin de semana largo. Ideal inversión. Condominio con áreas verdes y seguridad. Escríbeme para agendar visita! Ubicación. Condominio Villa Horizonte, Torre 3 Dpt. 201. Urba",
       "risk_score": 0,
       "opportunity_score": 30.0,
@@ -2135,7 +2135,7 @@
       "has_parking": false
     },
     {
-      "id": "12d7e028e73285",
+      "id": "df43da1a5c2a91",
       "source": "Urbania",
       "property_type": "Departamento",
       "district": "Chorrillos",
@@ -2143,7 +2143,7 @@
       "price_usd": 58591,
       "area_m2": 40.0,
       "price_per_m2": 1464.78,
-      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-chorrillos-lima-1-dormitorio-149815605?n_src=Listado&n_pills=Guardian%C3%ADa%2FSeguridad+privada&n_pg=1&n_pos=3",
+      "url": "https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-chorrillos-lima-1-dormitorio-149815605?n_src=Listado&n_pills=Cerca+a+colegios&n_pg=1&n_pos=3",
       "raw_text": "S/ 199,210 · USD 58,591 40 m² tot. 1 dorm. 1 baño 1 estac. Icaro Chorrillos, Lima Departamento de estreno 1 dorm. 40 m² en Chorrillos | Planos. Entrega: Marzo 2028. Precio: S/ 199, 210 (precio en dolares referencial) Departamento de 40 m² con una distribución práctica y funcional: cuenta con 1 dormitorio, 1 baño, sala-comedor, kitchenette y ambientes diseñados para aprovechar cada espacio. El edificio cuenta con lobby de ingreso, gimnasio, zona para niños, bbq Zone y Bike Zone. Proyecto en etapa de planos: oportunidad de ingresar al precio inicial antes del inicio de obra. Proyecto financiado por banbif. Entrega estimada: marzo 2028. Estacionamientos disponibles por un costo adicional. nxglibvnt2A13. Contáctanos. @housebrokerperu. House Bróker Perú",
       "risk_score": 0,
       "opportunity_score": 28.0,
