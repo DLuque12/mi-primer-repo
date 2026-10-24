@@ -1,6 +1,6 @@
 # Oportunidades inmobiliarias — Lima
 
-Actualizado: **2026-10-24T04:33:03+00:00**
+Actualizado: **2026-10-24T10:53:38+00:00**
 Tope: **US$ 60,000**
 
 > Lista depurada para evitar avisos inyectados por los portales desde otros distritos.
@@ -9,33 +9,3 @@ Tope: **US$ 60,000**
 
 | Puntaje | Distrito | Tipo | Precio | Área | US$/m² | Cochera | Riesgo | Aviso |
 |---:|---|---|---:|---:|---:|---|---:|---|
-| 94.0 | Lurín | Departamento | $42,000 | 80.0 | 525 | No | 0 | [80 m² tot. 3 dorm. 1 baño](https://www.adondevivir.com/propiedades/clasificado/veclapin-vendo-departamento-de-80-m-sup2--en-piso-3-las-150188800.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=6) |
-| 92.0 | La Victoria | Departamento | $28,000 | 92.0 | 304 | — | 0 | [92 m² tot.](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-la-victoria-lima-151408822?n_src=Listado&n_pg=1&n_pos=1) |
-| 92.0 | Villa El Salvador | Departamento | $29,640 | 140.0 | 212 | — | 0 | [140 m² tot. 2 dorm. 1 baño](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-villa-el-salvador-lima-2-dormitorios-150742596?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=1) |
-| 92.0 | Villa El Salvador | Departamento | $29,900 | 140.0 | 214 | — | 0 | [140 m² tot. 2 dorm. 1 baño](https://www.adondevivir.com/propiedades/clasificado/veclapin-departamento-aires-y-potencial-de-ampliacion-150742599.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=8) |
-| 89.6 | San Juan de Miraflores | Departamento | $27,000 | 63.0 | 429 | — | 0 | [63 m² tot. 2 dorm. 1 baño](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-2-dormitorios-151328567?n_src=Listado&n_pg=1&n_pos=1) |
-| 89.0 | Villa El Salvador | Terreno | $49,130 | 300.0 | 164 | — | 0 | [300 m² tot.](https://urbania.pe/inmueble/clasificado/vecltein-venta-de-terreno-en-villa-el-salvador-lima-150329203?n_src=Listado&n_pg=1&n_pos=2) |
-| 89.0 | Villa El Salvador | Terreno | $50,000 | 300.0 | 167 | — | 0 | [300 m² tot.](https://www.adondevivir.com/propiedades/clasificado/vecltein-terreno-en-venta-de-300-m-sup2--a-espalda-del-turing-150329222.html?n_src=Listado&n_pg=1&n_pos=26) |
-| 88.0 | San Miguel | Departamento | $53,623 | 97.0 | 553 | — | 0 | [200 un. 1 a 3 dorm. 26 a 97 m² tot.](https://www.adondevivir.com/propiedades/proyecto/ememhvin-alameda-san-miguel-144319116.html?n_src=Listado&n_pg=1&n_pos=3) |
-| 88.0 | San Miguel | Departamento | $45,337 | 74.0 | 613 | — | 0 | [1122 un. 1 a 3 dorm. 23 a 74 m² tot.](https://www.adondevivir.com/propiedades/proyecto/ememvein-costanova-lanzamiento!-147170397.html?n_src=Listado&n_pg=1&n_pos=4) |
-| 86.8 | Lima Cercado | Departamento | $60,000 | 87.0 | 690 | Sí (1) | 0 | [Departamento en Lima Cercado](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-lima-cercado-lima-2-dormitorios-150325909?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=19) |
-| 84.8 | San Juan de Miraflores | Departamento | $40,000 | 92.0 | 435 | — | 0 | [92 m² tot.](https://www.adondevivir.com/propiedades/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-151096328.html?n_src=Listado&n_pg=1&n_pos=22) |
-| 84.0 | San Miguel | Departamento | $60,000 | 55.0 | 1,091 | — | 0 | [55 m² tot. 1 dorm. 1 baño](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-miguel-lima-1-dormitorio-150697316?n_src=Listado&n_pg=1&n_pos=15) |
-| 84.0 | San Miguel | Departamento | $58,046 | 68.0 | 854 | — | 0 | [227 un. 1 a 3 dorm. 28 a 68 m² tot.](https://www.adondevivir.com/propiedades/proyecto/ememefin-la-marina-3420-146948101.html?n_src=Listado&n_pg=1&n_pos=8) |
-| 81.5 | Chorrillos | Departamento | $58,609 | 107.0 | 548 | — | 0 | [107 m² tot. 1 baño](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-los-cedros-de-villa-chorrillos-150928026?n_src=Listado&n_pg=1&n_pos=8) |
-| 81.3 | Chorrillos | Departamento | $60,000 | 109.0 | 550 | — | 0 | [109 m² tot. 3 dorm. 1 baño](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-chorrillos-lima-3-dormitorios-151124802?n_src=Listado&n_pg=1&n_pos=10) |
-| 79.6 | Villa El Salvador | Departamento | $47,246 | 108.0 | 437 | — | 0 | [108 m² tot. 3 dorm. 1 baño](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-villa-el-salvador-lima-3-dormitorios-150757850?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=6) |
-| 78.8 | Villa El Salvador | Departamento | $48,000 | 108.0 | 444 | — | 0 | [108 m² tot. 3 dorm. 1 baño](https://www.adondevivir.com/propiedades/clasificado/veclapin-se-vende-departamento-tercer-piso-cuarto-piso-150758517.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=27) |
-| 78.5 | Lurín | Terreno | $5,000 | 30.0 | 167 | — | 0 | [Ubicada en Playa Pulpos, una de las playas más exclusivas del sur de Lima, Kilómetro 40. 5 de la Pan](https://urbania.pe/inmueble/clasificado/vecltein-venta-de-terreno-en-pulpos-lurin-150026016?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=27) |
-| 75.1 | La Victoria | Departamento | $51,212 | 77.0 | 665 | — | 0 | [396 un. 1 a 3 dorm. 24 a 77 m² tot.](https://www.adondevivir.com/propiedades/proyecto/ememvein-catalina-sky-etapa-2-151031768.html?n_src=Listado&n_pg=1&n_pos=6) |
-| 73.8 | Lima Cercado | Departamento | $56,919 | 75.0 | 759 | — | 0 | [303 un. 1 a 2 dorm. 23 a 75 m² tot.](https://www.adondevivir.com/propiedades/proyecto/ememefin-minimal-santa-beatriz-en-construccion!-142580290.html?n_src=Listado&n_pg=1&n_pos=5) |
-| 73.4 | Chorrillos | Departamento | $55,000 | 80.0 | 688 | — | 0 | [Departamento en Chorrillos](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-chorrillos-lima-2-dormitorios-62384341?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=2) |
-| 72.2 | Lima Cercado | Departamento | $57,000 | 73.0 | 781 | — | 0 | [73 m² tot. 2 dorm. 1 baño](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-lima-cercado-lima-2-dormitorios-151099708?n_src=Listado&n_pg=1&n_pos=10) |
-| 69.2 | Chorrillos | Departamento | $60,000 | 87.0 | 690 | — | 0 | [87 m² tot. 3 dorm. 2 baños](https://www.adondevivir.com/propiedades/clasificado/veclapin-oportunidad-de-inversion-en-chorrillos-150280253.html?n_src=Listado&n_pg=1&n_pos=13) |
-| 68.4 | Santiago de Surco | Casa | $8,400 | 15.0 | 560 | — | 0 | [15 m² tot. 1 dorm. 1 baño](https://urbania.pe/inmueble/clasificado/veclcain-venta-de-casa-en-chacarilla-del-estanque-santiago-de-surco-1-dormitorio-151361058?n_src=Listado&n_pg=1&n_pos=1) |
-| 67.9 | San Miguel | Departamento | $55,000 | 37.0 | 1,486 | — | 0 | [Departamento en San Miguel](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-miguel-lima-1-dormitorio-149428703?n_src=Listado&n_pills=Gimnasio&n_pg=1&n_pos=6) |
-| 67.0 | Lima Cercado | Departamento | $55,366 | 65.0 | 852 | — | 0 | [311 un. 1 a 3 dorm. 35 a 65 m² tot.](https://www.adondevivir.com/propiedades/proyecto/ememvein-cedro-33-144570211.html?n_src=Listado&n_pg=1&n_pos=6) |
-| 66.0 | San Juan de Miraflores | Departamento | $55,675 | 106.0 | 525 | — | 0 | [106 m² tot. 1 dorm. 1 baño](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-juan-de-miraflores-lima-1-dormitorio-151303101?n_src=Listado&n_pills=Jard%C3%ADn&n_pg=1&n_pos=7) |
-| 65.6 | San Juan de Miraflores | Departamento | $56,000 | 106.0 | 528 | — | 0 | [106 m² tot. 1 dorm. 1 baño](https://www.adondevivir.com/propiedades/clasificado/veclapin-venta-de-azotea-independizada-con-area-construida-151303111.html?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=9) |
-| 65.4 | San Miguel | Departamento | $58,000 | 40.0 | 1,450 | — | 0 | [40 m² tot. 3 dorm. 1 baño](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-san-miguel-lima-3-dormitorios-149937132?n_src=Listado&n_pills=Seguridad&n_pg=1&n_pos=11) |
-| 62.3 | La Victoria | Departamento | $60,000 | 70.0 | 857 | Sí (1) | 0 | [70 m² tot. 1 dorm. 1 baño 1 estac.](https://urbania.pe/inmueble/clasificado/veclapin-venta-de-departamento-en-la-victoria-lima-1-dormitorio-146880514?n_src=Listado&n_pills=%C3%81rea+de+lavander%C3%ADa&n_pg=1&n_pos=7) |
