@@ -1,6 +1,6 @@
 # Oportunidades inmobiliarias — Lima
 
-Actualizado: **2026-11-01T05:57:34+00:00**
+Actualizado: **2026-11-01T13:15:56+00:00**
 Tope: **US$ 60,000**
 
 > Lista depurada para evitar avisos inyectados por los portales desde otros distritos.
